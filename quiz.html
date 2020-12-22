@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemba Quiz</title>
+    <title>Gemba Corp</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header class="navigation" id="navbar">
@@ -19,7 +19,7 @@
         <ul class="navlink">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#news">Training</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Quiz</a></li>
           <li class="burger">
             <a href="javascript:void(0);" onclick="responsiveNav()">
               <i class="fa fa-bars"></i>
@@ -28,35 +28,133 @@
         </ul>
       </nav>
     </header>
-<div class="quiz-container">
-    <div class="quiz">
+    <section class="card-section">
+      <a href="quiz.html" onclick="chooseQuiz(scrum)">
+        <div class="card-container">
+          <div class="card-image"></div>
+          <div class="card-text">
+            <h3 class="scrum-text">Scrum</h3>
+            <p>
+              Take this free Scrum assesment and see how good your understanding
+              of this framework is
+            </p>
+          </div>
+          <div class="card-button scrum">
+            <div class="button-info">
+              <div class="info">10<sup>m</sup></div>
+              <div class="category">Time</div>
+            </div>
+            <div class="button-info border">
+              <div class="info">10</div>
+              <div class="category">Questions</div>
+            </div>
+            <div class="button-info">
+              <div class="info">Basic</div>
+              <div class="category">Difficulity</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="quiz.html" onclick="chooseQuiz(kanban)">
+        <div class="card-container">
+          <div class="card-image bg2"></div>
+          <div class="card-text">
+            <h3 class="kanban-text">Kanban</h3>
+            <p>
+              Take this Kanban test and see if you understand the principles
+            </p>
+          </div>
+          <div class="card-button kanban">
+            <div class="button-info">
+              <div class="info">10<sup>m</sup></div>
+              <div class="category">Time</div>
+            </div>
+            <div class="button-info border">
+              <div class="info">10</div>
+              <div class="category">Questions</div>
+            </div>
+            <div class="button-info">
+              <div class="info">Basic</div>
+              <div class="category">Difficulity</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="quiz.html" onclick="chooseQuiz(product)">
+        <div class="card-container">
+          <div class="card-image bg3"></div>
+          <div class="card-text">
+            <h3 class="product-text">Product</h3>
+            <p>
+              Do you know how to build products that costumers want? Take the
+              test and find out
+            </p>
+          </div>
+          <div class="card-button product">
+            <div class="button-info">
+              <div class="info">10<sup>m</sup></div>
+              <div class="category">Time</div>
+            </div>
+            <div class="button-info border">
+              <div class="info">10</div>
+              <div class="category">Questions</div>
+            </div>
+            <div class="button-info">
+              <div class="info">Basic</div>
+              <div class="category">Difficulity</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+     <section class="rule_box container">
+      <div class="rule_title">
+        <span>Some Rules of this Quiz</span>
+      </div>
+      <div class="rule_list">
+        <div class="rule">
+          1. You have <span>60 seconds</span> per the quiz.
+        </div>
+        <div class="rule">2. Click on an answer to select it.</div>
+        <div class="rule">3. If you want to select another answer, click the reselect button</div>
+        <div class="rule">
+          4. Click Submit.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="start">Continue</button>
+      </div>
+    </section>
+    <section class="quiz-container">
+      <div class="quiz">
         <div class="quiz-hud">
-            <div class="question-counter">
-                <p>Question</p>
-            </div>
-            <div class="timer">
-            </div>
+          <div class="question-counter">
+            <p>Question</p>
+          </div>
+          <div class="timer"></div>
         </div>
         <div class="question-image"></div>
         <h1 id="question">Sample Question</h1>
-            <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
-    </div>
-</div>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1">Choice</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/quiz.js"></script>
 </html>

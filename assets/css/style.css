@@ -8,6 +8,8 @@ body {
   height: 100vh;
   font-size: 16px;
   font-family: "Roboto";
+  position: relative;
+  background: #fafafa;
 }
 /*Navigation bar */
 
@@ -17,6 +19,7 @@ body {
   align-items: center;
   background-color: rgba(25, 25, 25, 0.3);
   position: fixed;
+  z-index: 4;
   width: 100%;
   left: 0;
   top: 0;
@@ -34,7 +37,7 @@ body {
 
 }
 .logo:hover{
-color: #fac371;
+color: #bd8737;
 }
 .navlink {
   padding: 0px 10px;
@@ -46,7 +49,7 @@ color: #fac371;
   transition: color 0.8s;
 }
 .navlink li a:hover {
-  color: #8096fa;
+  color: #3650c7;
 }
 .navlink a {
   text-decoration: none;
@@ -97,10 +100,10 @@ font-size: 2.5rem;
     color: #fafafa;
 }
 .training-offer{
-    background: #8096fa;
+    background: #3650c7;
 }
 .quiz-offer{
-    background: #fac371;
+    background: #bd8737;
 
 }
 .training-offer,.quiz-offer{
@@ -142,6 +145,7 @@ font-size: 2.5rem;
 
 .card-section {
   width: 100%;
+  margin-top: 80px;
   background-color: #fafafa;
   display: flex;
   align-items: center;
@@ -188,22 +192,22 @@ font-size: 2.5rem;
   margin: 10px 5px;
 }
 .scrum-text {
-  color: #8096fa;
+  color: #3650c7;
 }
 .scrum {
-  background-color: #8096fa;
+  background-color: #3650c7;
 }
 .kanban-text {
-  color: #fac371;
+  color: #bd8737;
 }
 .kanban {
-  background-color: #fac371;
+  background-color: #bd8737;
 }
 .product-text {
-  color: #6bf766;
+  color: #2ba82b;
 }
 .product {
-  background-color: #6bf766;
+  background-color: #2ba82b;
 }
 .card-button {
   grid-area: quiz-button;
@@ -247,6 +251,69 @@ font-size: 2.5rem;
 .bg3 {
   background-image: url("../images/product.jpg");
 }
+.rule-box{
+    margin-top: 20px;
+    width: 600px;
+	max-width: 80%;
+	background: rgb(25, 25, 25);
+	border-radius: 15px;
+    pointer-events: none;
+    color: #fafafa;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.rule-box.active-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:3;
+    opacity: 1;
+}
+
+.rule-title{
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    border-bottom:1px solid #fafafa ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.rule-list{
+    padding: 0px 32px;
+}
+
+.rule{
+    font-size: 1.1rem;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.rule span {
+	font-weight: 600;
+}
+
+.rule-box .buttons{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-top: 1px solid #fafafa;
+    justify-content: flex-end;
+    padding: 20px 20px
+}
+
+.rule-box .buttons button {
+    margin: 0 10px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
 
 
 .quiz-container {
@@ -256,6 +323,7 @@ font-size: 2.5rem;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  opacity: 0;
 }
 .quiz{
     width: 75%;
@@ -286,6 +354,10 @@ font-size: 2.5rem;
     width: 100%;
 }
 
+.disabled{
+    display: none;
+}
+
 /*Media Queries */
 
 @media screen and (max-width: 600px) {
@@ -294,6 +366,8 @@ font-size: 2.5rem;
     position: fixed;
     display: block;
     padding: 10px 0px;
+    z-index: 4;
+
   }
   .navlink {
     display: block;

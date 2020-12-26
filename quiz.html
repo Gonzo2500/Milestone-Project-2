@@ -10,7 +10,7 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
   </head>
   <body>
     <header class="navigation" id="navbar">
@@ -129,43 +129,41 @@
       </div>
     </section>
     <section class="quiz-container">
-      <div class="quiz">
         <div class="quiz-hud">
-          <div class="question-counter">
+          <div class="question-category">
             <p>Question</p>
           </div>
           <div class="timer"></div>
         </div>
         <section>
           <div class="question-name">
-            <h1 id="question">Sample Question</h1>
+            <h1>Sample Question</h1>
+          </div>
+          <div class="choice-list">
+          <div class="choice-container">
+            <p class="choice-text">Choice</p>
           </div>
           <div class="choice-container">
-            <p class="choice-prefix">A</p>
-            <p class="choice-text" data-number="1">Choice</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-prefix">B</p>
             <p class="choice-text" data-number="2">Choice 2</p>
           </div>
           <div class="choice-container">
-            <p class="choice-prefix">C</p>
             <p class="choice-text" data-number="3">Choice 3</p>
           </div>
           <div class="choice-container">
-            <p class="choice-prefix">D</p>
             <p class="choice-text" data-number="4">Choice 4</p>
+          </div>
           </div>
         </section>
         <footer>
           <div class="total">
-            <!--<span><p>2</p>Of<p>10</p>Questions</span>-->
+            <span><p>2</p>Of<p>5</p>Questions</span>
           </div>
-          <button class="next_btn">Next</button>
+          <button class="next-btn">Next</button>
         </footer>
-      </div>
     </section>
+    <div class="quiz-bg"></div>
   </body>
   <script src="assets/js/navbar.js"></script>
   <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/question.js"></script>
 </html>

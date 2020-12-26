@@ -1,4 +1,4 @@
-let scrum_questions = [
+let scrumQuestions = [
   {
     category: "Scrum",
     numb: 1,
@@ -51,7 +51,7 @@ let scrum_questions = [
       "The Scrum Master doesn't serve the organisation",
       "Advising management on how to maximise productivity with Scrum",
       "Ensuring the team are always busy",
-      "Helping management understand the benefits of empiricism ",
+      "Helping management understand the benefits of empiricism",
     ],
   },
   {
@@ -120,7 +120,7 @@ let scrum_questions = [
   },
 ];
 
-let kanban_questions = [
+let kanbanQuestions = [
   {
     category: "Kanban",
     numb: 1,
@@ -154,7 +154,7 @@ let kanban_questions = [
     options: [
       "WIP = Cycle Time * Sprint Duration",
       "WIP = Sprint Duration * Throughput",
-      "Throughput = Cycle Time * WIP",
+      "WIP = Throughput / Cycle Time",
       "WIP = Throughput * Cycle Time",
     ],
   },
@@ -199,7 +199,7 @@ let kanban_questions = [
     category: "Kanban",
     numb: 7,
     question:
-      "You have noticed that team started to exceed their expected WIP limit this week. They kept running out of work to do and going faster than the arrival of more work in their queue. Nothing had changed this week and the issue wasn't happening any of the weeks going back at least six weeks. What should You do?",
+      "Your team started to exceed their WIP limit this week. They kept running out of work to do and going faster than the arrival of more work in their queue. Nothing had changed this week and the issue wasn't happening before. What should You do?",
     answer:
       "Investigate the causes. It could be a good thing, it is more likely that in a mature Kanban flow that there is an error or defect occurring that has not been caught yet",
     options: [
@@ -245,6 +245,135 @@ let kanban_questions = [
       "The team follows the kanban method and principles",
       "You have an unstable System, with imprecise predictions",
       "all of the above",
+    ],
+  },
+];
+
+let productQuestions = [
+  {
+    category: "Product",
+    numb: 1,
+    question: "Which is not one of the three main hypothesis for a business?",
+    answer: "Funding of the business",
+    options: [
+      "Costumer Problem",
+      "Value of the solution",
+      "Growth of the business",
+      "Funding of the business",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 2,
+    question: "You and your Company decide to pivot and make a single feature become the whole product, everything else in the product is cut away. What is this pivot called?",
+    answer:
+      "Zoom in pivot",
+    options: [
+      "Costumer need pivot",
+      "Platform pivot",
+      "Zoom in pivot",
+      "Value capture pivot",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 3,
+    question: "You have to decide to set up a metric to measure product success. Which one should you choose?",
+    answer: "Conversion rate from trial to purchase",
+    options: [
+      "Conversion rate from trial to purchase",
+      "Pageviews",
+      "Running total of Sales",
+      "Number of New Leads",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 4,
+    question: "What is the influence of technical debt on your Product? ",
+    answer: "You can't produce features as fast as before",
+    options: [
+      "It has no impact on the delivery of value",
+      "You can't produce features as fast as before",
+      "As long as it is kept small, the sideeffects are too small to notice",
+      "The product doesn't function anymore",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 5,
+    question: "A Product Mindset leads to?",
+    answer:
+      "Outcome based management",
+    options: [
+      "Less business involvement",
+      "More task management",
+      "Outcome based management",
+      "More handoffs between departments",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 6,
+    question: "Which term doesn't belong to the 3Vs?",
+    answer: "Vanity",
+    options: [
+      "Validation",
+      "Vision",
+      "Value",
+      "Vanity",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 7,
+    question:
+      "According to Steve Blank what should a company start with?",
+    answer:
+      "Costumer discovery",
+    options: [
+      "Costumer discovery",
+      "Company building",
+      "Costumer building",
+      "Costumer validation",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 8,
+    question: "What is the theory of jobs to be done",
+    answer:
+      "Users hire a product to achieve a certain goal",
+    options: [
+      "Focus primarily on the best solution for a costumer problem",
+      "Users hire a product to achieve a certain goal",
+      "Jobs to be done shows which tasks are still necessary in order to release the product",
+      "All of the above",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 9,
+    question: "Which one is not a framework for product discovery",
+    answer: "Scrum",
+    options: [
+      "Lean UX",
+      "Design Thinking",
+      "Scrum",
+      "Lean Startup",
+    ],
+  },
+  {
+    category: "Product",
+    numb: 10,
+    question:
+      "What is not a accountability of the Product Owner",
+    answer: "Resource utilization",
+    options: [
+      "Stakeholdermanagement",
+      "Costumer interviews",
+      "Resource utilization",
+      "Priotizing and structuring the product backlog",
     ],
   },
 ];

@@ -199,7 +199,7 @@ let kanbanQuestions = [
     category: "Kanban",
     numb: 7,
     question:
-      "Your team started to exceed their WIP limit this week. They kept running out of work to do and going faster than the arrival of more work in their queue. Nothing had changed this week and the issue wasn't happening before. What should You do?",
+      "Your team started to exceed their WIP limit this week. They kept running out of work to do. Nothing had changed this week and the issue wasn't happening before. What should You do?",
     answer:
       "Investigate the causes. It could be a good thing, it is more likely that in a mature Kanban flow that there is an error or defect occurring that has not been caught yet",
     options: [

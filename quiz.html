@@ -10,22 +10,23 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
   <body>
-    <header class="navigation" id="navbar">
-      <a href="index.html" class="logo">Gemba</a>
-      <nav>
+    <header>
+      <nav class="navigation" id="navbar">
+        <a href="index.html" class="logo">Gemba</a>
         <ul class="navlink">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="training.html">Training</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-          <li class="burger">
-            <a href="javascript:void(0);" onclick="responsiveNav()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </li>
+            <a class="navicon cancel" href="javascript:void(0);" onclick="closeNav()">
+          <i class="fas fa-times"></i>
+          </a>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="test.html">Training</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
         </ul>
+        <a class="navicon dropdown" href="javascript:void(0);" onclick="responsiveNav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <section class="card-section" id="quiz-card-container">
@@ -35,8 +36,8 @@
           <div class="card-text">
             <h3 class="scrum-text">Scrum</h3>
             <p>
-              Take this Scrum assesment and see how good your understanding
-              of this framework is
+              Take this Scrum assesment and see how good your understanding of
+              this framework is
             </p>
           </div>
           <div class="card-button scrum">
@@ -121,7 +122,8 @@
           3. After the click you'll see if your choice was correct.
         </div>
         <div class="rule">
-          4.You can find an explanation for the solution after you chose an answer.
+          4.You can find an explanation for the solution after you chose an
+          answer.
         </div>
       </div>
       <div class="buttons">
@@ -130,17 +132,17 @@
       </div>
     </section>
     <section class="quiz-container">
-        <div class="quiz-hud">
-          <div class="question-category">
-            <p>Question</p>
-          </div>
-          <div class="timer"></div>
+      <div class="quiz-hud">
+        <div class="question-category">
+          <p>Question</p>
         </div>
-        <section>
-          <div class="question-name">
-            <h1>Sample Question</h1>
-          </div>
-          <div class="choice-list">
+        <div class="timer"></div>
+      </div>
+      <section>
+        <div class="question-name">
+          <h1>Sample Question</h1>
+        </div>
+        <div class="choice-list">
           <div class="choice-container">
             <p class="choice-text">Choice</p>
           </div>
@@ -153,27 +155,31 @@
           <div class="choice-container">
             <p class="choice-text">Choice 4</p>
           </div>
-          </div>
-        </section>
-        <footer>
-          <div class="total">
-            <span><p>2</p>Of<p>5</p>Questions</span>
-          </div>
-          <button class="next-btn">Next</button>
-        </footer>
-    </section>
-     <section class="result-box">
-         <div class="icon">
-            <i class="fas fa-trophy"></i>
-         </div>
-         <div class="result-text"><p>You've completed the Quiz!</p></div>
-         <div class="score">
-         </div>
-         <div class="buttons">
-            <button class="quit">Back</button>
-            <button class="other-quiz">Training</button>
-         </div>
+        </div>
       </section>
+      <footer>
+        <div class="total">
+          <span
+            ><p>2</p>
+            Of
+            <p>5</p>
+            Questions</span
+          >
+        </div>
+        <button class="next-btn">Next</button>
+      </footer>
+    </section>
+    <section class="result-box">
+      <div class="icon">
+        <i class="fas fa-trophy"></i>
+      </div>
+      <div class="result-text"><p>You've completed the Quiz!</p></div>
+      <div class="score"></div>
+      <div class="buttons">
+        <button class="quit">Back</button>
+        <button class="other-quiz">Training</button>
+      </div>
+    </section>
     <div class="quiz-bg"></div>
   </body>
   <script src="assets/js/navbar.js"></script>

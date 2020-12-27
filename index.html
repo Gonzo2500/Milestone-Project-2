@@ -13,26 +13,29 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="navigation" id="navbar">
-      <a href="index.html" class="logo">Gemba</a>
-      <nav>
+     <header>
+      <nav class="navigation" id="navbar">
+        <a href="index.html" class="logo">Gemba</a>
         <ul class="navlink">
-          <li><a href="#index.html" class="active">Home</a></li>
-          <li><a href="#training.html">Training</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-          <li class="burger">
-            <a href="javascript:void(0);" onclick="responsiveNav()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </li>
+            <a class="navicon cancel" href="javascript:void(0);" onclick="closeNav()">
+          <i class="fas fa-times"></i>
+          </a>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="test.html">Training</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
         </ul>
+        <a class="navicon dropdown" href="javascript:void(0);" onclick="responsiveNav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <section class="hero-text">
+        <div class="text-container">
       <h1>Learn with<span class="logo-hero"> Gemba</span></h1>
       <h2>
         Give your organization the skills to grow
       </h2>
+      </div>
     </section>
     <div class="offer-container">
         <div class="training-offer">

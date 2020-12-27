@@ -10,6 +10,7 @@ const startQuiz = document.querySelector(".start");
 const exitQuiz = document.querySelectorAll(".quit");
 //quiz box const
 const quizBox = document.querySelector(".quiz-container");
+const timerCount = document.querySelector(".timer .timer-number");
 const quizBackground = document.querySelector(".quiz-bg");
 const questionTitle = document.querySelector(".question-category");
 const choiceList = document.querySelector(".choice-list");
@@ -24,6 +25,8 @@ let questions; // variable used to get the right question array. depending on us
 let questionCounter = 0; // used to iterate through the questions
 let questionNumber = 1; // Variable used t display question in the footer
 let score = 0; // Used to display the quiz score
+let timerCounter;
+let timeValue = 20;
 
 [
   [scrumQuiz, "Scrum"],
@@ -66,7 +69,7 @@ startQuiz.onclick = () => {
   quizBackground.classList.add("active-box");
   inputQuestions(0);
   questionFooter(1);
-  timer(60);
+  startTimer(20);
 };
 
 exitQuiz.forEach(
@@ -126,6 +129,7 @@ function inputQuestions(i) {
 }
 
 function optionSelected(answer) {
+  clearInterval(timerCounter);
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCounter].answer;
 
@@ -155,8 +159,10 @@ nextButton.onclick = () => {
   if (questionCounter < questions.length - 1) {
     questionCounter++;
     questionNumber++;
+    clearInterval(timerCounter); // timer reset
     inputQuestions(questionCounter);
     questionFooter(questionNumber);
+    startTimer(timeValue);
     nextButton.style.display = "none";
   } else {
     showResult();
@@ -169,28 +175,64 @@ function questionFooter(questionTotal) {
   question_counter.innerHTML = totalQuestionTag;
 }
 
-function showResult() { resultScore
-  quizBox.classList.remove("active-box");
-   quizBackground.classList.remove("active-box");
-  resultBox.classList.add("active-box");
-   if (quizCard === "Scrum") {
-        document.querySelector(".other-quiz").classList.add("scrum");
-      } else if (quizCard === "Kanban") {
-        document.querySelector(".other-quiz").classList.add("kanban");
-      } else if (quizCard === "Product") {
-        document.querySelector(".other-quiz").classList.add("product");
-      }
+function startTimer(time) {
+  timerCounter = setInterval(timer, 1000);
 
-  if(score < 3) {
-      let scoreTag = `<p>You scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>Maybe check out our ${questions[0].category} beginner training to learn the basics!</p>`;
+  function timer() {
+    timerCount.textContent = time;
+    time--;
+
+    if (time < 9) {
+      let addZero = timerCount.textContent;
+      timerCount.textContent = "0" + addZero; // add a 0 from 9
+    }
+    if (time < 0) {
+      clearInterval(timerCounter);
+      timerCount.textContent = "00";
+      const allChoices = choiceList.children.length; // get options items
+      let correcAns = questions[questionCounter].answer; // correct answer from questions array
+
+      for (let i = 0; i < allChoices; i++) {
+        if (choiceList.children[i].textContent == correcAns) {
+          // match option to correct answer
+          choiceList.children[i].setAttribute(
+            "class",
+            "choice-container correct"
+          ); // adding green color answer
+        }
+      }
+      for (let i = 0; i < allChoices; i++) {
+        choiceList.children[i].classList.add("disabled"); // disable all options
+      }
+      nextButton.style.display = "block";
+    }
+  }
+}
+
+function showResult() {
+  resultScore;
+  quizBox.classList.remove("active-box");
+  quizBackground.classList.remove("active-box");
+  resultBox.classList.add("active-box");
+  if (quizCard === "Scrum") {
+    document.querySelector(".other-quiz").classList.add("scrum");
+  } else if (quizCard === "Kanban") {
+    document.querySelector(".other-quiz").classList.add("kanban");
+  } else if (quizCard === "Product") {
+    document.querySelector(".other-quiz").classList.add("product");
+  }
+
+  if (score < 3) {
+    let scoreTag = `<p>You scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>Maybe check out our ${questions[0].category} beginner training to learn the basics!</p>`;
     resultScore.innerHTML = scoreTag;
-    } else if( score < 6 && score >= 3) {
-         let scoreTag = `<p>You scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>Maybe check out our ${questions[0].category} advanced training to learn even more!</p>`;
+  } else if (score < 6 && score >= 3) {
+    let scoreTag = `<p>You scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>Maybe check out our ${questions[0].category} advanced training to learn even more!</p>`;
     resultScore.innerHTML = scoreTag;
-    }else if( score < 10 && score >= 6) {
-         let scoreTag = `<p>You scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>Maybe check out our ${questions[0].category} masterclass training and bring your knowledge to the next level!</p>`;
+  } else if (score < 10 && score >= 6) {
+    let scoreTag = `<p>You scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>Maybe check out our ${questions[0].category} masterclass training and bring your knowledge to the next level!</p>`;
     resultScore.innerHTML = scoreTag;
-} else{
+  } else {
     let scoreTag = `<p>Wow you scored <span>${score}</span> out of <span>${questions.length}</span> questions.</p><p>That's a perfect score!</p>`;
-    resultScore.innerHTML = scoreTag;}
+    resultScore.innerHTML = scoreTag;
+  }
 }

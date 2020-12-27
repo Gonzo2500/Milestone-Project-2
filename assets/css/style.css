@@ -344,7 +344,15 @@ body {
 .question-category {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.timer-number{
+    text-align: center;
+    padding: 5px;
+    width: 70px;
+    border: 2px solid #fafafa;
+    font-size:1.25rem;
+    font-weight: 700;
 }
 .question-name {
   margin-bottom: 15px;

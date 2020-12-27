@@ -138,7 +138,7 @@ body {
   font-size: 1.7rem;
   margin: 10px 30px;
 }
-
+/*  Buttons on Page */
 .btn-training,
 .btn-quiz {
   text-decoration: none;
@@ -150,15 +150,14 @@ body {
   font-weight: 700;
   border: 1px solid rgb(25, 25, 25);
 }
-
 .btn-training:hover,
 .btn-quiz:hover {
   background-color: #fafafa;
   border: 1px solid rgb(25, 25, 25);
   color: rgb(25, 25, 25);
 }
-/*quiz page^*/
-
+/*quiz page*/
+/*  Quiz Cards */
 .card-section {
   width: 100%;
   margin-top: 80px;
@@ -210,24 +209,6 @@ body {
   font-size: 1.25rem;
   margin: 10px 5px;
 }
-.scrum-text {
-  color: #9eadf0;
-}
-.scrum {
-  background-color: #9eadf0;
-}
-.kanban-text {
-  color: #fac371;
-}
-.kanban {
-  background-color: #fac371;
-}
-.product-text {
-  color: #daf174;
-}
-.product {
-  background-color: #daf174;
-}
 .card-button {
   grid-area: quiz-button;
   display: grid;
@@ -236,7 +217,6 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-
 .card-button .button-info {
   display: flex;
   align-items: center;
@@ -271,6 +251,26 @@ body {
 .bg3 {
   background-image: url("../images/product.jpg");
 }
+/*  Styles used to assign cards and quizes color accordingly */
+.scrum-text {
+  color: #9eadf0;
+}
+.scrum {
+  background-color: #9eadf0;
+}
+.kanban-text {
+  color: #fac371;
+}
+.kanban {
+  background-color: #fac371;
+}
+.product-text {
+  color: #daf174;
+}
+.product {
+  background-color: #daf174;
+}
+/*  Rule Box for Quiz */
 .rule-box {
   margin-top: 20px;
   display: none;
@@ -283,7 +283,6 @@ body {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.1);
 }
-
 .rule-title {
   font-size: 1.5rem;
   padding: 10px 40px;
@@ -292,27 +291,23 @@ body {
   display: flex;
   align-items: center;
 }
-
 .rule-list {
   padding: 0px 32px;
 }
-
 .rule {
   font-size: 1.1rem;
   margin: 10px;
   line-height: 1.6;
 }
-
 .rule span {
   font-weight: 600;
 }
-
+/*  Style for Quiz buttons*/
 .quit,
 .start,
 .other-quiz {
   cursor: pointer;
 }
-
 .rule-box .buttons,
 .result-box .buttons {
   display: flex;
@@ -322,7 +317,6 @@ body {
   justify-content: flex-end;
   padding: 25px 20px;
 }
-
 .rule-box .buttons button,
 .result-box .buttons button {
   margin: 0 10px;
@@ -334,6 +328,7 @@ body {
   font-size: 1rem;
   border-radius: 15px;
 }
+/*  Quiz questions */
 .quiz-container {
   margin-top: 80px;
   display: none;
@@ -346,7 +341,6 @@ body {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.1);
 }
-
 .question-category {
   font-size: 1.5rem;
   font-weight: 700;
@@ -380,16 +374,16 @@ body {
   color: rgb(25, 25, 25);
   font-weight: 700;
 }
+/*  Style classes to show right or wrong answer */
 .correct {
   background: #2cdf62;
   border: 1px solid #fafafa;
 }
-
 .false {
   background: #e21934;
   border: 1px solid #fafafa;
 }
-
+/*  question footer */
 footer {
   align-items: center;
   display: flex;
@@ -398,25 +392,20 @@ footer {
   width: 100%;
   font-size: 1rem;
 }
-
 .total {
   padding-right: 10px;
 }
-
 .total span {
   display: flex;
   user-select: none;
 }
-
 .total span p {
   font-weight: 500;
   padding: 0 5px;
 }
-
 .total span p:first-child {
   padding-left: 0px;
 }
-
 .next-btn {
   border: 1px solid #fff;
   border-radius: 5px;
@@ -429,7 +418,7 @@ footer {
   padding: 0 13px;
   display: none;
 }
-
+/*  Result for after finishing the quiz */
 .result-box {
   display: block;
   margin-top: 20px;
@@ -443,19 +432,17 @@ footer {
   color: #fafafa;
   text-align: center;
 }
-
 .icon {
   font-size: 2.5rem;
   padding: 10px;
 }
-
 .result-text,
 .score {
   font-size: 1.25rem;
   padding: 10px;
   line-height: 1.5;
 }
-
+/*  using the active-box class to toggle the display of the boxes */
 .rule-box.active-box,
 .quiz-container.active-box,
 .result-box.active-box {
@@ -468,6 +455,7 @@ footer {
   transform: translate(-50%, -50%) scale(1);
   display: block;
 }
+/* Background when the quiz starts*/
 .quiz-bg {
   left: 50%;
   top: 50%;
@@ -481,9 +469,7 @@ footer {
   width: 100%;
   transform: translate(-50%, -50%) scale(1);
 }
-
 /*Media Queries */
-
 @media screen and (max-width: 600px) {
   body {
     max-height: 100%;
@@ -495,7 +481,6 @@ footer {
   .navicon.disabled {
     display: none;
   }
-
   .navigation .navlink {
     position: fixed;
     top: 0;
@@ -510,7 +495,6 @@ footer {
     border-bottom: 2px solid #9eadf0;
     transition: all 0.3s ease-out;
   }
-
   .navigation.responsive .navlink {
     left: 0%;
   }
@@ -588,7 +572,6 @@ footer {
     margin: 40px 15px;
   }
 }
-
 @media only screen and (min-width: 2000px) and (max-width: 2561px) {
   .hero-text h1 {
     font-size: 5rem;
@@ -600,7 +583,6 @@ footer {
   .hero-text h2 {
     font-size: 4rem;
   }
-
   .training-offer i,
   .quiz-offer i {
     font-size: 4rem;
@@ -609,7 +591,6 @@ footer {
   .quiz-offer h3 {
     font-size: 3.5rem;
   }
-
   .btn-training,
   .btn-quiz {
     font-size: 2rem;
@@ -619,8 +600,5 @@ footer {
     font-weight: 700;
     border: 5px solid rgb(25, 25, 25);
   }
-}
-
-@media screen and (max-width: 1px) {
 }
 

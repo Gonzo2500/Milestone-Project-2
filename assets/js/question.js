@@ -333,7 +333,7 @@ let productQuestions = [
       "Costumer discovery",
     options: [
       "Costumer discovery",
-      "Company building",
+      "Company creation",
       "Costumer building",
       "Costumer validation",
     ],

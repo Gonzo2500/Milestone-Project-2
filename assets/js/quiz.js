@@ -151,7 +151,6 @@ function optionSelected(answer) {
   }
   nextButton.style.display = "block";
 }
-
 nextButton.onclick = () => {
   if (questionCounter < questions.length - 1) {
     questionCounter++;

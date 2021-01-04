@@ -23,8 +23,8 @@ Here is a link to the deployed [site](https://gonzo2500.github.io/Milestone-Proj
 ##### Colour Scheme
 the main colors used for this project are white (#fafafa) and rgb(25,25,25). Depending on the scenario they are used as background-color or the main font-color. Other colors that are used are  orange #fac371 blue #9eadf0 and yellow #daf174. These colors are also used to show the user which quiz they are currently answering, because text-colors, button-colors and background-colors(for the answer) adapts to the user choice.
 
-![example of color change ]https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/scrum-quiz.PNG "example of color change scrum")
-![example of color change ]https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/kanban-quiz.PNG "example of color change kanban")
+![example of color change ](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/scrum-quiz.PNG "example of color change scrum")
+![example of color change ](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/kanban-quiz.PNG "example of color change kanban")
 
 
 ##### Typography

@@ -11,33 +11,33 @@ Here is a link to the deployed [site](https://gonzo2500.github.io/Milestone-Proj
 
 ### User Experience (UX) 
 #### User Stories 
-+ As a visitor of the site I want a clear overview of games that are offered. So that I can see if the offers draw my interest
-+ As a visitor I want to see links to social accounts from "Pulze", so I can see how many people are following and using "Pulze" and get more trust.  
-+ As a visitor i want an easy way to navigate to the events/tournaments offered by "Pulze"
-+ As a visitor interested joining a tournament I need to understand easily which tournament starts where?(region) when? (time) and how many people can join. (party size). To make a decision for what tournaments I might want to sign up to. 
-+ As a visitor I want to able to sign up for a tournament, to later be able to participate on the tournament.
-+ As a visitor I want to get more information on the benefits I might have when using this service, to make a decision for or against the usage.
++ As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
++ As a user I want to challenge my knowledge about agile software development.  
++ As a user of the quiz I want the chance to have different quiz topics.
++ As a user of the quiz I want to be able to see a timer and how many questions are still left.
++ As a user of the quiz, I want to get a final score to see how good my knowledge of the topic really is
++ As a user of the quiz I want to see the right answer, to learn more. 
++ As a user I want to be able to join a training class to improve my skills. 
 
 #### Design
 ##### Colour Scheme
-the main colors used for this project are white (#fafafa) neon-pink (#ff6ec7) and a dark grey (rgba(15, 15, 15, 1)). These colors together give the website a appearance close to style used for <a href="https://en.wikipedia.org/wiki/Vaporwave" target="_blank">vaporwave</a> art.
+the main colors used for this project are white (#fafafa) and rgb(25,25,25). Depending on the scenario they are used as background-color or the main font-color. Other colors that are used are  orange #fac371 blue #9eadf0 and yellow #daf174. These colors are also used to show the user which quiz they are currently answering, because text-colors, button-colors and background-colors(for the answer) adapts to the user choice.
 
-Throughout the page text-shadow is used to give e.g. headlines a bright look that builts a strong contrast to the dark grey background. 
 ![example of text-shadow ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/headline-shadow-screenshot.PNG "example of text-shadow")
 
 ##### Typography
 The Roboto font is the main font used in this project. It provides a natural reading rhythm giving the webpage a nice look while also bringing accessibility in terms of easy to read text. As a fallback Sans-serif was used, in case the font doesn't load to the webpage correctly.
 
-Press Start 2P is a bitmap font based on the font design from 1980s Namco arcade games. It was used mostly for headers. It gives the webpage an arcade feeling, which suits the theme "gaming" perfectly. The reason for the scarce usage of this font was to keep the easy readable. As a Fallback Sans-serif was used, in case the font doesn't load to the webpage correctly.
+Bungee Outline was used for the Gemba logo. This font stands out (also works great with Roboto). The reason for the scarce usage of this font was to keep the easy readable. As a Fallback Sans-serif was used, in case the font doesn't load to the webpage correctly.
 
 ##### Imagery
-Images for the hero shots were used to create a striking effect that gains the users/visitors attention. Game logos were used to show what kind of games are offered on the webpage, because for users that play these games remember these images (logos) and though get a better understanding of the purpose of this website .
+Images for the hero shots were used to create a striking effect that gains the users/visitors attention. The same applies for the images for the quiz-cards.
  
 ##### Wireframes
-A Desktop First approach was used for the design of the wireframes.  This aproach was used because the webpage revolves around esports and gaming. Users likely use their desktops or notebooks to visit the site. Because most traffic nowadays comes from mobile users, work was provided to make sure that the website is repsonsive on all screen sizes.
- + Home Page Wireframe : [Desktop](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/lp_desktop.pdf)    [Mobile](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/lp_mobile.pdf) [Tablet](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/LP_tablet.pdf)
- + Event Page Wireframe : [Desktop](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/event_desktop.pdf)    [Mobile](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/eventpage_mobile.pdf) [Tablet](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/event_tablet.pdf)
- + About Page Wireframe : [Desktop](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/about_us_desktop.pdf)    [Mobile](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/about_us_mobile.pdf) [Tablet](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/about-tablet.pdf)
+A Desktop First approach was used for the design of the wireframes.  This aproach was used because the webpage revolves around software development and business learning. Users likely use their desktops or notebooks to visit the site. Because most traffic nowadays comes from mobile users, work was provided to make sure that the website is repsonsive on all screen sizes.
+ + Home Page Wireframe : [Desktop](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/gemba_landing_page_wireframe.pdf)   
+ + Quiz Page Wireframe : [Desktop](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/gemba_quiz_page_wireframe.pdf) 
+ + Quiz Box Card Page Wireframe : [Desktop](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/gemba_quiz_card_wireframe.pdf)   
 
 
 ### Features

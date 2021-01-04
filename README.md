@@ -23,7 +23,9 @@ Here is a link to the deployed [site](https://gonzo2500.github.io/Milestone-Proj
 ##### Colour Scheme
 the main colors used for this project are white (#fafafa) and rgb(25,25,25). Depending on the scenario they are used as background-color or the main font-color. Other colors that are used are  orange #fac371 blue #9eadf0 and yellow #daf174. These colors are also used to show the user which quiz they are currently answering, because text-colors, button-colors and background-colors(for the answer) adapts to the user choice.
 
-![example of text-shadow ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/headline-shadow-screenshot.PNG "example of text-shadow")
+![example of color change ]https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/scrum-quiz.PNG "example of color change scrum")
+![example of color change ]https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/kanban-quiz.PNG "example of color change kanban")
+
 
 ##### Typography
 The Roboto font is the main font used in this project. It provides a natural reading rhythm giving the webpage a nice look while also bringing accessibility in terms of easy to read text. As a fallback Sans-serif was used, in case the font doesn't load to the webpage correctly.
@@ -136,7 +138,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 ### Technologies Used
 + HTML ~ main Language used to structure the individual pages of the website.
 + CSS ~ styling language used to format and visually build upon the accompanying HTML.
-+ [Bootstrap Framework](https://getbootstrap.com/) ~ Used as the core structuring layout building blocks of the website, ensuring responsive size display.
 + [Gitpod](https://www.gitpod.io/) ~ Gitpod was used as the preferred IDE for this project.
 + Gitpod Terminal ~ Used to commit to local repository and further push to Github Repo ensuring version controlling of the project build.
 + [Git](https://git-scm.com/) ~ Version control system for tracking changes to your coding projects.
@@ -173,8 +174,6 @@ The following steps were used to deploy the page to Github Pages
 + All content of this site was written by the website developer
 
 #### Code
-The [Bootstrap](https://getbootstrap.com/) library was used to structure parts of the website
-+ The Navigation bar (mainly the collapse function on small screens)
-+ the modal on the event page
+
 
 To keep the footer at the bottom of the page [CSS-tricks](https://css-tricks.com/couple-takes-sticky-footer/) provided an easy solution, which was used in this project

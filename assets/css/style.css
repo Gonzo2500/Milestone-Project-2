@@ -13,7 +13,6 @@ body {
   background: #fafafa;
 }
 /*Navigation bar */
-
 .navigation {
   position: fixed;
   width: 100%;
@@ -65,15 +64,12 @@ body {
   color: #fafafa;
   font-size: 2rem;
 }
-
 .navlink .cancel {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-
 /*Text Section */
-
 .hero-text {
   height: 50vh;
   max-width: 100%;
@@ -104,7 +100,6 @@ body {
 .hero-text h2 {
   font-size: 2rem;
 }
-
 .offer-container {
   max-width: 100%;
   display: flex;

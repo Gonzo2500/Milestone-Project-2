@@ -346,13 +346,13 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
 }
-.timer-number{
-    text-align: center;
-    padding: 5px;
-    width: 70px;
-    border: 2px solid #fafafa;
-    font-size:1.25rem;
-    font-weight: 700;
+.timer-number {
+  text-align: center;
+  padding: 5px;
+  width: 70px;
+  border: 2px solid #fafafa;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 .question-name {
   margin-bottom: 15px;
@@ -372,7 +372,6 @@ body {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(228, 157, 25, 0.5);
   transform: scale(1.02);
-  transform: transform 100ms;
 }
 .choice-container.disabled {
   pointer-events: none;
@@ -402,6 +401,7 @@ footer {
 }
 .total {
   padding-right: 10px;
+  display: flex;
 }
 .total span {
   display: flex;
@@ -476,6 +476,73 @@ footer {
   height: 130%;
   width: 100%;
   transform: translate(-50%, -50%) scale(1);
+}
+/*Training/Contact page */
+.contact-container {
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.contact-container h1 {
+font-size: 2.5rem;
+}
+.contact-container h2 {
+    font-size: 2rem;
+}
+.form-container {
+  max-width: 600px;
+  background: #fac371;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form label {
+  display: block;
+  margin: 15px 0px 10px 0px;
+  font-weight: 700;
+}
+
+.contact-form h3 {
+  margin-bottom: 10px;
+}
+.contact-form input {
+  width: 70%;
+  height: 1.75rem;
+}
+.contact-form select {
+  width: 70%;
+  height: 1.75rem;
+}
+.contact-form textarea{
+    width:70%;
+    height: 150px;
+}
+.contact-form input[type=submit]{
+    margin-top: 15px; 
+    width: 33%;
+    height: auto;
+    background: rgb(25, 25, 25);
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.contact-form input[type=submit]:hover{
+    background: #fafafa;
+    border: 1px solid rgb(25, 25, 25);
+    color: rgb(25, 25, 25);
 }
 /*Media Queries */
 @media screen and (max-width: 600px) {
@@ -609,4 +676,3 @@ footer {
     border: 5px solid rgb(25, 25, 25);
   }
 }
-

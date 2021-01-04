@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemba Corp</title>
+    <title>Gemba Quiz Page</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -27,7 +27,7 @@
           </a>
           </li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="test.html">Training</a></li>
+          <li><a href="contact.html">Training</a></li>
           <li><a href="quiz.html" class="active">Quiz</a></li>
         </ul>
         <a
@@ -121,19 +121,20 @@
     <!--Quiz Section inspired and adapted from tutorial by Coding Nepal: https://www.youtube.com/watch?v=pQr4O1OITJo -->
     <section class="rule-box">
       <div class="rule-title">
-        <span> Rules of this Quiz</span>
+        <h2> Rules of this Quiz</h2>
       </div>
       <div class="rule-list">
-        <div class="rule">
+        <div class="rule"><p>
           1. You have <span class="text-color">60s</span> for the quiz.
+          </p>
         </div>
-        <div class="rule">2. Click on an answer to select it.</div>
-        <div class="rule">
-          3. After the click you'll see if your choice was correct.
+        <div class="rule"><p>2. Click on an answer to select it.</p></div>
+        <div class="rule"><p>
+          3. After the click you'll see if your choice was correct.</p>
         </div>
-        <div class="rule">
+        <div class="rule"><p>
           4.You can find an explanation for the solution after you chose an
-          answer.
+          answer.</p>
         </div>
       </div>
       <div class="buttons">
@@ -144,7 +145,7 @@
     <section class="quiz-container">
       <div class="quiz-hud">
         <div class="question-category">
-          <p>Question</p>
+          <h3>Question-category</h3>
         </div>
         <div class="timer">
           <div class="timer-number"></div>
@@ -152,7 +153,7 @@
       </div>
       <section>
         <div class="question-name">
-          <h1>Sample Question</h1>
+          <h2>Sample Question</h2>
         </div>
         <div class="choice-list">
           <div class="choice-container">
@@ -171,12 +172,11 @@
       </section>
       <footer>
         <div class="total">
-          <span
-            ><p>2</p>
+         
+            <p> <span>2</span>
             Of
-            <p>5</p>
-            Questions</span
-          >
+            <span>10</span>
+            Questions</p>
         </div>
         <button class="next-btn">Next</button>
       </footer>
@@ -185,11 +185,11 @@
       <div class="icon">
         <i class="fas fa-trophy"></i>
       </div>
-      <div class="result-text"><p>You've completed the Quiz!</p></div>
+      <div class="result-text"><h3>You've completed the Quiz!</h3></div>
       <div class="score"></div>
       <div class="buttons">
         <button class="quit">Back</button>
-        <button class="other-quiz">Training</button>
+        <button class="other-quiz" id="training-button">Training</button>
       </div>
     </section>
     <div class="quiz-bg"></div>

@@ -4,11 +4,10 @@
 ### Background 
 This milestone project creation is the last step of learning and study from the fourth and fifth modules of the Full Stack Developer Course, Javascript Fundamentals & Interactive Frontend Development,, to build a mobile-first fully responsive website. In this case for the fictional company "Gemba". The emphasis was on building a quiz, that is displayed at the "Gemba" Website.
 
-![Hero-shot](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/screenshot-hero.PNG "Hero-shot index.html")
+![Hero-shot-quiz](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-shot.PNG "Hero-shot quiz.html")
 
-The website provides the user with the ability to look for tournaments, sign up for a specific day, region and game.
-
-Here is a link to the deployed [site](https://gonzo2500.github.io/Milestone_project_1)
+The website provides the user with the ability to try three different quizes, revoling around software agility. 
+Here is a link to the deployed [site](https://gonzo2500.github.io/Milestone-Project-2/index.html)
 
 ### User Experience (UX) 
 #### User Stories 

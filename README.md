@@ -64,19 +64,16 @@ Although this website contains "forms" i.e. modals on the event.html and a conta
 
 #### Future Features  
 
-##### Form Data
+##### Select multiple answers
 The data users enter in the form will be sent. This could be to an email or a created database.
 
-##### Theme switch
+##### Training page (google maps)
 In the [style.css](https://github.com/Gonzo2500/Milestone_project_1/blob/master/assets/css/style.css) file the colors that are used in this project are mostly stored in variables. There were 2 reasons for this, first it makes it less error-prone to misplace color. The second reson was a feature idea of switching the color theme of the website via an option in the navigation bar. Here you can find an <a href="https://alligator.io/" target="_blank">example.</a>
 The idea was to reverse engineer it and switch variables with Javascript. As Javascript is not in the scope of this project, the feature will be added in the future.
  
-##### Modal form
+##### Providing an Explanation for solution after user selects answer 
 To sign up for a tournament right now everything has to be stated in detail. That means that information like region, game and day are not preselected via the card the user clicks on. With Javascript the implemented feature would be: The User clicks on a specific card and just needs to fill out name, email and party-size.
-
-##### Tournament cards
-![tournament cards ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/tournament-cards.PNG "tournament cards")
-Right know only the "Join" button of tournament cards is clickable. In Future the whole card will be clickable and a modal will appear. This will be handled with Javascript and replacing the bootstrap modal.
+.
 
 ### Testing
 The W3C Markup Validator and W3C CSS Validator Services were used on every page of the project to ensure there were no syntax errors.
@@ -138,6 +135,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 ### Technologies Used
 + HTML ~ main Language used to structure the individual pages of the website.
 + CSS ~ styling language used to format and visually build upon the accompanying HTML.
++ Javascript ~ used for interactivity on website and logic behind quiz.
 + [Gitpod](https://www.gitpod.io/) ~ Gitpod was used as the preferred IDE for this project.
 + Gitpod Terminal ~ Used to commit to local repository and further push to Github Repo ensuring version controlling of the project build.
 + [Git](https://git-scm.com/) ~ Version control system for tracking changes to your coding projects.

@@ -135,6 +135,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 ### Technologies Used
 + HTML ~ main Language used to structure the individual pages of the website.
 + CSS ~ styling language used to format and visually build upon the accompanying HTML.
++ EmailJs ~ so the form information is sent to the website owner.
 + Javascript ~ used for interactivity on website and logic behind quiz.
 + [Gitpod](https://www.gitpod.io/) ~ Gitpod was used as the preferred IDE for this project.
 + Gitpod Terminal ~ Used to commit to local repository and further push to Github Repo ensuring version controlling of the project build.

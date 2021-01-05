@@ -57,13 +57,12 @@ The fonts used throughout the site were imported into the HTML of each page from
 
 #### User Stories
 1. As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
-2. As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
-3. As a user I want to challenge my knowledge about agile software development.  
-4. As a user of the quiz I want the chance to have different quiz topics.
-5. As a user of the quiz I want to be able to see a timer and how many questions are still left.
-6. As a user of the quiz, I want to get a final score to see how good my knowledge of the topic really is
-7. As a user of the quiz I want to see the right answer, to learn more. 
-8. As a user I want to be able to join a training class to improve my skills. 
+2. As a user I want to challenge my knowledge about agile software development.  
+3. As a user of the quiz I want the chance to have different quiz topics.
+4. As a user of the quiz I want to be able to see a timer and how many questions are still left.
+5. As a user of the quiz, I want to get a final score to see how good my knowledge of the topic really is
+6. As a user of the quiz I want to see the right answer, to learn more. 
+7. As a user I want to be able to join a training class to improve my skills. 
 
 #### Future Features  
 
@@ -84,17 +83,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 + [JSHint](https://jshint.com/) 
 
 #### Testing User Stories from User Experience (UX) Section
-#### 1. As a visitor of the site I want a clear overview of games that are offered. So that I can see if the offers draw my interest
-+ On the hero shot the user can see a notable  [button](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/btn-games.PNG) in the hero section. When clicking on the button the user will be sent to the games overview section. 
+#### 1. As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
++ The Gemba landing page provides a simple overview about the content that is provided on the webpage. The user can navigate via the navigation bar or use the buttons to got to the site.
 ![games overview section ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/choose-your-game.PNG "games overview section")
 
-#### 2. As a visitor I want to see links to social accounts from "Pulze", so I can see how many people are following and using "Pulze" and get more trust.  
-+ Social links are shown on the landing page. For this an extra section was created.
+#### 2. As a user I want to challenge my knowledge about agile software development. As a user of the quiz I want the chance to have different quiz topics.
++ When the user goes to the quiz section, he has the chance to select 1 of 3 quizzes.
 ![social links section ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/join-us.PNG "social links section")
 + Because this section is just on the landing page, social links are also provided in the footer. So Visitors can access the "Pulze" social media accounts from everywhere
 ![footer of the page with social links](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/footer.PNG "footer of the page with social links")
 
-#### 3. As a visitor i want an easy way to navigate to the events/tournaments offered by "Pulze"
+#### 3. As a user of the quiz I want to be able to see a timer and how many questions are still left.
 + The event page can be easily reached via the navigation bar
 ![navigation bar](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/navigation-bar-screenshot.PNG "navigation bar")
 
@@ -105,20 +104,21 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 ![event pages hero button](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/event-hero-btn-screenshot.PNG "event pages hero button")
 
 
-#### 4. As a visitor interested joining a tournament I need to understand easily which tournament starts where?(region) when? (time) and how many people can join. (Party size). To make a decision for what tournaments I might want to sign up to. 
+#### 4. As a user of the quiz I want to see the right answer, to learn more. 
 + Right before the user comes to the tournament cards, the user first sees the region section. A color was used to show a specific region.
 ![region section on event page](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/region.PNG "region section on event page")
 + The tournament cards use the same colors to indicate the region for the tournament. In the card the user can find more information on time and party size. Because the cards are sorted by weekdays, the user is always able to know when a tournament takes place.
 ![tournament cards](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/tournament-cards.PNG "tournament cards")
 
-#### 5. As a visitor I want to able to sign up for a tournament, to participate on the tournament.
+#### 5.  As a user of the quiz, I want to get a final score to see how good my knowledge of the topic really is
 + Each tournament card has a "Join" button. When a user clicks on one of these buttons a contact form opens up.
 + Because this project is focused on HTML & CSS only. The user needs to fill out the form, while also stating which game he wants to play, at which region and at which day. Other information that are asked in this form are a name, email and the party-size, if the user wants to play together with friends in a premade party.
 
 ![modal form view](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/modal.PNG "modal form view")
 
-#### 6. As a visitor I want to get more information on the benefits I might have when using this Service, to make a decision for or against the usage.
+#### 6.  As a user I want to be able to join a training class to improve my skills.
 + The about page was created to provide the user with more information. In the hero shot the "Pulze" vision is stated. It summarizes what the webpage tries to achieve and gives a great outlook too. 
+
 
 ![pulze vision](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/about-vision.PNG "pulze vision")
 

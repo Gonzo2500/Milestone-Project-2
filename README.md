@@ -49,6 +49,8 @@ A Desktop First approach was used for the design of the wireframes.  This aproac
 + Get form data from user via EmailJs
 + Both forms hold data validation and all fields residing within are set to required ensuring information submitted is of the correct format.
 + Interactive elements
++ Showing right answer for questions
++ Showing how much time the user has left to answer
 
 The fonts used throughout the site were imported into the HTML of each page from Google Fonts and are called 'Roboto' and "Bungee Outline".
 
@@ -66,20 +68,20 @@ The fonts used throughout the site were imported into the HTML of each page from
 #### Future Features  
 
 ##### Select multiple answers
-The data users enter in the form will be sent. This could be to an email or a created database.
+The next addition would be to allow the user multiple answers. In the first version it is only possible to select one answer.
 
 ##### Training page (google maps)
-In the [style.css](https://github.com/Gonzo2500/Milestone_project_1/blob/master/assets/css/style.css) file the colors that are used in this project are mostly stored in variables. There were 2 reasons for this, first it makes it less error-prone to misplace color. The second reson was a feature idea of switching the color theme of the website via an option in the navigation bar. Here you can find an <a href="https://alligator.io/" target="_blank">example.</a>
-The idea was to reverse engineer it and switch variables with Javascript. As Javascript is not in the scope of this project, the feature will be added in the future.
+The concept for the [training page](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/gemba_landing_page_wireframe.pdf) was to have google maps and markers for the locations the training will take place. In the first version this was replaced by a simple form field, where the user can choose his training class. But it is planned to replace it with google maps, markers on the map and event cards next to the map
  
 ##### Providing an Explanation for solution after user selects answer 
-To sign up for a tournament right now everything has to be stated in detail. That means that information like region, game and day are not preselected via the card the user clicks on. With Javascript the implemented feature would be: The User clicks on a specific card and just needs to fill out name, email and party-size.
+This will be a button triggering a dropdown, that gives the user a detailed explanation for the right answer.
 .
 
 ### Testing
 The W3C Markup Validator and W3C CSS Validator Services were used on every page of the project to ensure there were no syntax errors.
-+ [HTML Validator](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/screenshot-html.PNG)
-+ [CSS Validator](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/css-validator.PNG)
++ [HTML Validator](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/html%20validator.PNG)
++ [CSS Validator](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/css%20validator.PNG)
++ [JSHint](https://jshint.com/) 
 
 #### Testing User Stories from User Experience (UX) Section
 #### 1. As a visitor of the site I want a clear overview of games that are offered. So that I can see if the offers draw my interest

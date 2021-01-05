@@ -2,7 +2,7 @@
 ![Gemba Project](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/hero-ms2.PNG "Hero-shot index.html")
 ## Gemba Consulting Interactive Frontend Project 
 ### Background 
-This milestone project creation is the last step of learning and study from the fourth and fifth modules of the Full Stack Developer Course, Javascript Fundamentals & Interactive Frontend Development,, to build a mobile-first fully responsive website. In this case for the fictional company "Gemba". The emphasis was on building a quiz, that is displayed at the "Gemba" Website.
+This milestone project creation is the last step of learning and study from the fourth and fifth modules of the Full Stack Developer Course, Javascript Fundamentals & Interactive Frontend Development,, to build a mobile-first fully responsive website. In this case for the fictional company "Gemba". The emphasis was on building a quiz, that is displayed at the "Gemba" Website. As Javascript was in scope for this project, e.g.Bootstrap wasn't used and things like a responsive navbar were build independently.
 
 ![Hero-shot-quiz](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-shot.PNG "Hero-shot quiz.html")
 
@@ -43,24 +43,25 @@ A Desktop First approach was used for the design of the wireframes.  This aproac
 
 
 ### Features
-+ Fully responsive website
-+ Sign up to different tournaments
-+ Contact form for requests
++ Fully responsive website with vanilla javascript navigation bar
++ Play 3 different quizzes
++ Contact form for training classes
++ Get form data from user via EmailJs
 + Both forms hold data validation and all fields residing within are set to required ensuring information submitted is of the correct format.
 + Interactive elements
 
-The fonts used throughout the site were imported into the HTML of each page from Google Fonts and are called 'Roboto' and "Press Start 2p".
+The fonts used throughout the site were imported into the HTML of each page from Google Fonts and are called 'Roboto' and "Bungee Outline".
 
-Disclaimer:
-Although this website contains "forms" i.e. modals on the event.html and a contact form on contact.html they do not alert anyone that a sign up has been created and will not populate any server database.
 
 #### User Stories
-1. As a visitor of the site I want a clear overview of games that are offered. So that I can see if the offers draw my interest
-2. As a visitor I want to see links to social accounts from "Pulze", so I can see how many people are following and using "Pulze" and get more trust.
-3. As a visitor i want an easy way to navigate to the events/tournaments offered by "Pulze"
-4. As a visitor interested joining a tournament I need to understand easily which tournament starts where?(region) when? (time) and how many people can join. (Party size). To make a decision for what tournaments I might want to sign up to. 
-5. As a visitor I want to able to sign up for a tournament, to participate on the tournament.
-6. As a visitor I want to get more information on the benefits I might have when using this Service, to make a decision for or against the usage.
+1. As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
+2. As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
+3. As a user I want to challenge my knowledge about agile software development.  
+4. As a user of the quiz I want the chance to have different quiz topics.
+5. As a user of the quiz I want to be able to see a timer and how many questions are still left.
+6. As a user of the quiz, I want to get a final score to see how good my knowledge of the topic really is
+7. As a user of the quiz I want to see the right answer, to learn more. 
+8. As a user I want to be able to join a training class to improve my skills. 
 
 #### Future Features  
 
@@ -159,7 +160,7 @@ The following steps were used to deploy the page to Github Pages
 + Scroll back down to the GitHub pages section to obtain the link to the  published site. 
 
 #### How to run the project locally
-+ [click here to access the project repository](https://github.com/Gonzo2500/Milestone_project_1)
++ [click here to access the project repository](https://github.com/Gonzo2500/Milestone-Project-2)
 + Click on the dropdown menu named "Code"
 + Click the HTTPs section (it should be preselected)
 + Click the clipboard icon to clone the repository
@@ -174,5 +175,4 @@ The following steps were used to deploy the page to Github Pages
 
 #### Code
 
-
-To keep the footer at the bottom of the page [CSS-tricks](https://css-tricks.com/couple-takes-sticky-footer/) provided an easy solution, which was used in this project
+For the quiz: https://www.youtube.com/watch?v=WUBhpSRS_fk

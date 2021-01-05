@@ -94,41 +94,37 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 ![button back to quiz section](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-result.PNG "button back to quiz section")
 
 #### 3. As a user of the quiz I want to be able to see a timer and how many questions are still left.
-+ Before the quiz starts the user gets informed that a time limit per question exists.
-![navigation bar](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/navigation-bar-screenshot.PNG "navigation bar")
++ Before the quiz starts the user gets informed that a time limit per question exists. This is implemented so the user isn't surpised and can mentally prepare accordingly. 
+![rule box](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_rule_box_screenshot.PNG "rule box")
 
-+ The visitor can also get to the event page by clicking on the game images provided on the landing page
-![event pages image link](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/choose-your-game.PNG "event pages image link")
++ When the quiz started the user can see a timer that counts down from 60s.  
+![quiz timer](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_timer.PNG "quiz timer")
 
-+ On the event page the user can use to button in the hero shot to automatically scroll down to the events
-![event pages hero button](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/event-hero-btn-screenshot.PNG "event pages hero button")
++ Also right under the answer options the user can find how many questions were already answered and how many questions are still left
+![quiz footer, question number](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_quiz_footer.PNG "quiz footer, question number")
 
 
 #### 4. As a user of the quiz I want to see the right answer, to learn more. 
-+ Right before the user comes to the tournament cards, the user first sees the region section. A color was used to show a specific region.
-![region section on event page](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/region.PNG "region section on event page")
-+ The tournament cards use the same colors to indicate the region for the tournament. In the card the user can find more information on time and party size. Because the cards are sorted by weekdays, the user is always able to know when a tournament takes place.
-![tournament cards](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/tournament-cards.PNG "tournament cards")
++ When the user selects an answer he gets feedback immediately. If the user selected the correct answer, the selected option is displayed green.
+![user answers right](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_quiz_answer.PNG "user answers right")
++ When the user selects the wrong answer, the selectedoption is displayed red and the correct answer will appear green, to show the right solution. 
+![user answers wrong](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_quiz_solution.PNG "user answers wrong")
++ In addition: When the timer reaches zero, the user can't select an answer anymore and the solution is displayed green
 
 #### 5.  As a user of the quiz, I want to get a final score to see how good my knowledge of the topic really is
-+ Each tournament card has a "Join" button. When a user clicks on one of these buttons a contact form opens up.
-+ Because this project is focused on HTML & CSS only. The user needs to fill out the form, while also stating which game he wants to play, at which region and at which day. Other information that are asked in this form are a name, email and the party-size, if the user wants to play together with friends in a premade party.
++ When the user chooses the correct answer, a point to the total score is added. The score is then displayed after the user finished answering all the questions. 
++ Depending on the score the user gets different messages and recommendation for training. As an example: When the user gets no correct answer, the recommendation is the beginner training on the quiz topic. When the user scores 8 points the "Masterclass" training is recommended 
 
-![modal form view](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/modal.PNG "modal form view")
+![perfect score, no particular training is recommended](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-result.PNG "perfect score, no particular training is recommended")
+![example for an other score and message](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_quiz_result_2.PNG "example for an other score and message")
+
 
 #### 6.  As a user I want to be able to join a training class to improve my skills.
-+ The about page was created to provide the user with more information. In the hero shot the "Pulze" vision is stated. It summarizes what the webpage tries to achieve and gives a great outlook too. 
++ As shown in the screenshots before, the user can access the training/contact page frrom all areas of the webpage, while buttons from the start- and quizpage send the user there.
+![training page](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_training_screenshot.PNG "training page")
++ The user can select a training class and training level on the form field. The information then is send via EmailJs. 
+![email generated from form](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/emailjs_mail.PNG "email generated from form")
 
-
-![pulze vision](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/about-vision.PNG "pulze vision")
-
-+ The offer section gives more detailed information on what "pulze" is doing to fulfill the vision.
-
-![pulze offer](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/about-offer.PNG "pulze offer")
-
-+The benefit parts explains to the user every detail on why they should use "Pulze" and what to gain from it.
-
-![Pulze benefit](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/about-benefits.PNG "Pulze benefit")
 
 #### Further Testing 
 + The Website was tested on different browsers e.g. Chrome, Internet Explorer, Microsoft Edge, Mozilla Firefox and Safari 

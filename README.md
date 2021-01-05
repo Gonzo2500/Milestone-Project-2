@@ -85,16 +85,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 #### Testing User Stories from User Experience (UX) Section
 #### 1. As a visitor of the site I want a clear overview of the content that is offered. So that I can see if the offers draw my interest
 + The Gemba landing page provides a simple overview about the content that is provided on the webpage. The user can navigate via the navigation bar or use the buttons to got to the site.
-![games overview section ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/choose-your-game.PNG "games overview section")
+![landing page ](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/gemba_lp_screenshot.PNG "landing page")
 
 #### 2. As a user I want to challenge my knowledge about agile software development. As a user of the quiz I want the chance to have different quiz topics.
 + When the user goes to the quiz section, he has the chance to select 1 of 3 quizzes.
-![social links section ](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/join-us.PNG "social links section")
-+ Because this section is just on the landing page, social links are also provided in the footer. So Visitors can access the "Pulze" social media accounts from everywhere
-![footer of the page with social links](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/footer.PNG "footer of the page with social links")
+![quiz section ](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-shot.PNG "quiz section")
++ After the user finishes the quiz, he gets the result page. There the user has the chance to go back to the quiz section and take another quiz. 
+![button back to quiz section](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-result.PNG "button back to quiz section")
 
 #### 3. As a user of the quiz I want to be able to see a timer and how many questions are still left.
-+ The event page can be easily reached via the navigation bar
++ Before the quiz starts the user gets informed that a time limit per question exists.
 ![navigation bar](https://github.com/Gonzo2500/Milestone_project_1/blob/master/documentation/screenshots/navigation-bar-screenshot.PNG "navigation bar")
 
 + The visitor can also get to the event page by clicking on the game images provided on the landing page

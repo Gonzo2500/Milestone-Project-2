@@ -2,7 +2,7 @@
 ![Gemba Project](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/hero-ms2.PNG "Hero-shot index.html")
 ## Gemba Consulting Interactive Frontend Project 
 ### Background 
-This milestone project creation is the last step of learning and study from the fourth and fifth modules of the Full Stack Developer Course, Javascript Fundamentals & Interactive Frontend Development,, to build a mobile-first fully responsive website. In this case for the fictional company "Gemba". The emphasis was on building a quiz, that is displayed at the "Gemba" Website. As Javascript was in scope for this project, e.g.Bootstrap wasn't used and things like a responsive navbar were build independently.
+This milestone project creation is the last step of learning and study from the fourth and fifth modules of the Full Stack Developer Course, Javascript Fundamentals & Interactive Frontend Development,, to build a mobile-first fully responsive website. In this case for the fictional company "Gemba". The emphasis was on building a quiz, that is displayed at the "Gemba" Website. As Javascript was in scope for this project, Bootstrap wasn't used and things like a responsive navbar were build independently.
 
 ![Hero-shot-quiz](https://github.com/Gonzo2500/Milestone-Project-2/blob/master/documentation/screenshots/quiz-shot.PNG "Hero-shot quiz.html")
 
@@ -163,7 +163,7 @@ The following steps were used to deploy the page to Github Pages
 + Click the HTTPs section (it should be preselected)
 + Click the clipboard icon to clone the repository
 + Open your IDE terminal
-+ Type ‘git clone’ and paste in the url you just copied e.g. `$ git clone https://github.com/Gonzo2500/Milestone_project_1.git`
++ Type ‘git clone’ and paste in the url you just copied e.g. `$ git clone https://github.com/Gonzo2500/Milestone-Project-2.git`
 + Press enter, the clone will be created
 
 ### Credits

@@ -9,11 +9,11 @@ function sendMail(contactForm) {
     })
     .then(
       function (response) {
-        console.log("success", response);
+        console.log("success", response); // Test if sending was succesful
       },
       function (error) {
-        console.log("failed");
+        console.log("failed"); // Test if sending was unsuccesful
       }
     );
-  return false;
+  return false; // prevent page from refreshing
 }

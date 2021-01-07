@@ -130,7 +130,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used on every page 
 + The Website was tested on different browsers e.g. Chrome, Internet Explorer, Microsoft Edge, Mozilla Firefox and Safari 
 + The Website was viewed on different devices: Desktop, laptop, IPad and mobilephones
 + Friends and relatives were shown the website and reviewed it
-
+#### Known Issues 
+ + On the chrome developer tools for Iphone 5 sometimes the quiz container overflows on the kanban quiz for 5 and 7. 
+ 
 ### Technologies Used
 + HTML ~ main Language used to structure the individual pages of the website.
 + CSS ~ styling language used to format and visually build upon the accompanying HTML.

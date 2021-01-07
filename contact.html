@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemba Contact Page</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Gemba Contact Page</title>
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+         ></script>
+      <script type="text/javascript">
          (function(){
             emailjs.init("user_OAMPBDPvdR7i2uDIlfWws");
          })();
-    </script>
-  </head>
-  <body>
-    <header>
-      <nav class="navigation" id="navbar">
-        <a href="index.html" class="logo">Gemba</a>
-        <ul class="navlink">
-          <li>
+      </script>
+   </head>
+   <body>
+      <header>
+         <nav class="navigation" id="navbar">
+            <a href="index.html" class="logo">Gemba</a>
+            <ul class="navlink">
+               <li>
+                  <a
+                     class="navicon cancel"
+                     href="javascript:void(0);"
+                     onclick="closeNav()"
+                     >
+                  <i class="fas fa-times"></i>
+                  </a>
+               </li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="contact.html">Training</a></li>
+               <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
             <a
-              class="navicon cancel"
-              href="javascript:void(0);"
-              onclick="closeNav()"
-            >
-              <i class="fas fa-times"></i>
+               class="navicon dropdown"
+               href="javascript:void(0);"
+               onclick="responsiveNav()"
+               >
+            <i class="fa fa-bars"></i>
             </a>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Training</a></li>
-          <li><a href="quiz.html" class="active">Quiz</a></li>
-        </ul>
-        <a
-          class="navicon dropdown"
-          href="javascript:void(0);"
-          onclick="responsiveNav()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
-    <div class="contact-container">
-      <h1><span class="logo-hero">Gemba </span>Training Offers</h1>
-      <h2>We provide training for Scrum, Kanban and Product Management</h2>
-      <div class="form-container">
-        <form class="contact-form" onsubmit="return sendMail(this);">
-          <h3>Please fill out the form to attend a training</h3>
-          <label for="Name">Your Name</label>
-          <input type="text" id="Name" name="Name" required />
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="training"
-            >Please select the training you like to attend</label
-          >
-          <select id="training" name="training" required>
-            <option value="">Choose a Training</option>
-            <option value="scrum">Scrum</option>
-            <option value="kanban">Kanban</option>
-            <option value="product">Product Management</option>
-          </select>
-          <label for="level"
-            >Please select the level of training</label
-          >
-          <select id="level" name="level" required>
-            <option value="">Choose a Training Level</option>
-            <option value="Beginner">Beginner</option>
-            <option value="Advanced">Advanced</option>
-            <option value="Masterclass">Masterclass</option>
-          </select>
-          <label for="message">Your Message for us</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="If you have any questions, please let us know here."
-          ></textarea>
-          <input type="submit" value="Submit" />
-        </form>
+         </nav>
+      </header>
+      <div class="contact-container">
+         <h1><span class="logo-hero">Gemba </span>Training Offers</h1>
+         <h2>We provide training for Scrum, Kanban and Product Management</h2>
+         <div class="form-container">
+            <form class="contact-form" onsubmit="return sendMail(this);">
+               <h3>Please fill out the form to attend a training</h3>
+               <label for="Name">Your Name</label>
+               <input type="text" id="Name" name="Name" required />
+               <label for="email">Your Email</label>
+               <input type="email" id="email" name="email" required />
+               <label for="training"
+                  >Please select the training you like to attend</label
+                  >
+               <select id="training" name="training" required>
+                  <option value="">Choose a Training</option>
+                  <option value="scrum">Scrum</option>
+                  <option value="kanban">Kanban</option>
+                  <option value="product">Product Management</option>
+               </select>
+               <label for="level"
+                  >Please select the level of training</label
+                  >
+               <select id="level" name="level" required>
+                  <option value="">Choose a Training Level</option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Advanced">Advanced</option>
+                  <option value="Masterclass">Masterclass</option>
+               </select>
+               <label for="message">Your Message for us</label>
+               <textarea
+                  name="message"
+                  id="message"
+                  placeholder="If you have any questions, please let us know here."
+                  ></textarea>
+               <input type="submit" value="Submit" />
+            </form>
+         </div>
       </div>
-    </div>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
-  </body>
+      <script src="assets/js/navbar.js"></script>
+      <script src="assets/js/sendEmail.js"></script>
+   </body>
 </html>

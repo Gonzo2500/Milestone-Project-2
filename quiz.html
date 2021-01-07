@@ -1,199 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemba Quiz Page</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
-  <body>
-     <header>
-      <nav class="navigation" id="navbar">
-        <a href="index.html" class="logo">Gemba</a>
-        <ul class="navlink">
-            <li>
-          <a
-            class="navicon cancel"
-            href="javascript:void(0);"
-            onclick="closeNav()"
-          >
-            <i class="fas fa-times"></i>
-          </a>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Training</a></li>
-          <li><a href="quiz.html" class="active">Quiz</a></li>
-        </ul>
-        <a
-          class="navicon dropdown"
-          href="javascript:void(0);"
-          onclick="responsiveNav()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
-    <section class="card-section" id="quiz-card-container">
-      <a href="javascript:void(0);" class="scrum-quiz">
-        <div class="card-container">
-          <div class="card-image"></div>
-          <div class="card-text">
-            <h3 class="scrum-text">Scrum</h3>
-            <p>
-              Take this Scrum assesment and see how good your understanding of
-              this framework is
-            </p>
-          </div>
-          <div class="card-button scrum">
-            <div class="button-info">
-              <div class="info">10<sup>m</sup></div>
-              <div class="category">Time</div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Gemba Quiz Page</title>
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+   </head>
+   <body>
+      <header>
+         <nav class="navigation" id="navbar">
+            <a href="index.html" class="logo">Gemba</a>
+            <ul class="navlink">
+               <li>
+                  <a
+                     class="navicon cancel"
+                     href="javascript:void(0);"
+                     onclick="closeNav()"
+                     >
+                  <i class="fas fa-times"></i>
+                  </a>
+               </li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="contact.html">Training</a></li>
+               <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
+            <a
+               class="navicon dropdown"
+               href="javascript:void(0);"
+               onclick="responsiveNav()"
+               >
+            <i class="fa fa-bars"></i>
+            </a>
+         </nav>
+      </header>
+      <section class="card-section" id="quiz-card-container">
+         <a href="javascript:void(0);" class="scrum-quiz">
+            <div class="card-container">
+               <div class="card-image"></div>
+               <div class="card-text">
+                  <h3 class="scrum-text">Scrum</h3>
+                  <p>
+                     Take this Scrum assesment and see how good your understanding of
+                     this framework is
+                  </p>
+               </div>
+               <div class="card-button scrum">
+                  <div class="button-info">
+                     <div class="info">10<sup>m</sup></div>
+                     <div class="category">Time</div>
+                  </div>
+                  <div class="button-info border">
+                     <div class="info">10</div>
+                     <div class="category">Questions</div>
+                  </div>
+                  <div class="button-info">
+                     <div class="info">Basic</div>
+                     <div class="category">Difficulity</div>
+                  </div>
+               </div>
             </div>
-            <div class="button-info border">
-              <div class="info">10</div>
-              <div class="category">Questions</div>
+         </a>
+         <a href="javascript:void(0);" class="kanban-quiz">
+            <div class="card-container">
+               <div class="card-image bg2"></div>
+               <div class="card-text">
+                  <h3 class="kanban-text">Kanban</h3>
+                  <p>
+                     Take this Kanban test and see if you understand the principles
+                  </p>
+               </div>
+               <div class="card-button kanban">
+                  <div class="button-info">
+                     <div class="info">10<sup>m</sup></div>
+                     <div class="category">Time</div>
+                  </div>
+                  <div class="button-info border">
+                     <div class="info">10</div>
+                     <div class="category">Questions</div>
+                  </div>
+                  <div class="button-info">
+                     <div class="info">Basic</div>
+                     <div class="category">Difficulity</div>
+                  </div>
+               </div>
             </div>
-            <div class="button-info">
-              <div class="info">Basic</div>
-              <div class="category">Difficulity</div>
+         </a>
+         <a href="javascript:void(0);" class="product-quiz">
+            <div class="card-container">
+               <div class="card-image bg3"></div>
+               <div class="card-text">
+                  <h3 class="product-text">Product</h3>
+                  <p>
+                     Do you know how to build products that costumers want? Take the
+                     test and find out
+                  </p>
+               </div>
+               <div class="card-button product">
+                  <div class="button-info">
+                     <div class="info">10<sup>m</sup></div>
+                     <div class="category">Time</div>
+                  </div>
+                  <div class="button-info border">
+                     <div class="info">10</div>
+                     <div class="category">Questions</div>
+                  </div>
+                  <div class="button-info">
+                     <div class="info">Basic</div>
+                     <div class="category">Difficulity</div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </a>
-      <a href="javascript:void(0);" class="kanban-quiz">
-        <div class="card-container">
-          <div class="card-image bg2"></div>
-          <div class="card-text">
-            <h3 class="kanban-text">Kanban</h3>
-            <p>
-              Take this Kanban test and see if you understand the principles
-            </p>
-          </div>
-          <div class="card-button kanban">
-            <div class="button-info">
-              <div class="info">10<sup>m</sup></div>
-              <div class="category">Time</div>
-            </div>
-            <div class="button-info border">
-              <div class="info">10</div>
-              <div class="category">Questions</div>
-            </div>
-            <div class="button-info">
-              <div class="info">Basic</div>
-              <div class="category">Difficulity</div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="javascript:void(0);" class="product-quiz">
-        <div class="card-container">
-          <div class="card-image bg3"></div>
-          <div class="card-text">
-            <h3 class="product-text">Product</h3>
-            <p>
-              Do you know how to build products that costumers want? Take the
-              test and find out
-            </p>
-          </div>
-          <div class="card-button product">
-            <div class="button-info">
-              <div class="info">10<sup>m</sup></div>
-              <div class="category">Time</div>
-            </div>
-            <div class="button-info border">
-              <div class="info">10</div>
-              <div class="category">Questions</div>
-            </div>
-            <div class="button-info">
-              <div class="info">Basic</div>
-              <div class="category">Difficulity</div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </section>
-    <!--Quiz Section inspired and adapted from tutorial by Coding Nepal: https://www.youtube.com/watch?v=pQr4O1OITJo -->
-    <section class="rule-box">
-      <div class="rule-title">
-        <h2> Rules of this Quiz</h2>
-      </div>
-      <div class="rule-list">
-        <div class="rule"><p>
-          1. You have <span class="text-color">60s</span> for the quiz.
-          </p>
-        </div>
-        <div class="rule"><p>2. Click on an answer to select it.</p></div>
-        <div class="rule"><p>
-          3. After the click you'll see if your choice was correct.</p>
-        </div>
-        <div class="rule"><p>
-          4.Enjoy the quiz</p>
-        </div>
-      </div>
-      <div class="buttons">
-        <button class="quit">Exit Quiz</button>
-        <button class="start">Continue</button>
-      </div>
-    </section>
-    <section class="quiz-container">
-      <div class="quiz-hud">
-        <div class="question-category">
-          <h3>Question-category</h3>
-        </div>
-        <div class="timer">
-          <div class="timer-number"></div>
-        </div>
-      </div>
-      <section>
-        <div class="question-name">
-          <h2>Sample Question</h2>
-        </div>
-        <div class="choice-list">
-          <div class="choice-container">
-            <p class="choice-text">Choice</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-text">Choice 2</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-text">Choice 3</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-text">Choice 4</p>
-          </div>
-        </div>
+         </a>
       </section>
-      <footer>
-        <div class="total">
-         
-            <p> <span>2</span>
-            Of
-            <span>10</span>
-            Questions</p>
-        </div>
-        <button class="next-btn">Next</button>
-      </footer>
-    </section>
-    <section class="result-box">
-      <div class="icon">
-        <i class="fas fa-trophy"></i>
-      </div>
-      <div class="result-text"><h3>You've completed the Quiz!</h3></div>
-      <div class="score"></div>
-      <div class="buttons">
-        <button class="quit">Back</button>
-        <button class="other-quiz" id="training-button">Training</button>
-      </div>
-    </section>
-    <div class="quiz-bg"></div>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/quiz.js"></script>
-    <script src="assets/js/question.js"></script>
-  </body>
+      <!--Quiz Section inspired and adapted from tutorial by Coding Nepal: https://www.youtube.com/watch?v=pQr4O1OITJo -->
+      <section class="rule-box">
+         <div class="rule-title">
+            <h2> Rules of this Quiz</h2>
+         </div>
+         <div class="rule-list">
+            <div class="rule">
+               <p>
+                  1. You have <span class="text-color">60s</span> for the quiz.
+               </p>
+            </div>
+            <div class="rule">
+               <p>2. Click on an answer to select it.</p>
+            </div>
+            <div class="rule">
+               <p>
+                  3. After the click you'll see if your choice was correct.
+               </p>
+            </div>
+            <div class="rule">
+               <p>
+                  4.Enjoy the quiz
+               </p>
+            </div>
+         </div>
+         <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="start">Continue</button>
+         </div>
+      </section>
+      <section class="quiz-container">
+         <div class="quiz-hud">
+            <div class="question-category">
+               <h3>Question-category</h3>
+            </div>
+            <div class="timer">
+               <div class="timer-number"></div>
+            </div>
+         </div>
+         <section>
+            <div class="question-name">
+               <h2>Sample Question</h2>
+            </div>
+            <div class="choice-list">
+               <div class="choice-container">
+                  <p class="choice-text">Choice</p>
+               </div>
+               <div class="choice-container">
+                  <p class="choice-text">Choice 2</p>
+               </div>
+               <div class="choice-container">
+                  <p class="choice-text">Choice 3</p>
+               </div>
+               <div class="choice-container">
+                  <p class="choice-text">Choice 4</p>
+               </div>
+            </div>
+         </section>
+         <footer>
+            <div class="total">
+               <p> <span>2</span>
+                  Of
+                  <span>10</span>
+                  Questions
+               </p>
+            </div>
+            <button class="next-btn">Next</button>
+         </footer>
+      </section>
+      <section class="result-box">
+         <div class="icon">
+            <i class="fas fa-trophy"></i>
+         </div>
+         <div class="result-text">
+            <h3>You've completed the Quiz!</h3>
+         </div>
+         <div class="score"></div>
+         <div class="buttons">
+            <button class="quit">Back</button>
+            <button class="other-quiz" id="training-button">Training</button>
+         </div>
+      </section>
+      <div class="quiz-bg"></div>
+      <script src="assets/js/navbar.js"></script>
+      <script src="assets/js/quiz.js"></script>
+      <script src="assets/js/question.js"></script>
+   </body>
 </html>

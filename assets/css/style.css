@@ -1,702 +1,819 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
 body {
-  height: 100vh;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  background: #fafafa;
+	height: 100vh;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	position: relative;
+	background: #fafafa;
 }
+
+
 /*Navigation bar */
+
 .navigation {
-  position: fixed;
-  width: 100%;
-  z-index: 4;
-  padding: 10px 0;
-  background: rgb(25, 25, 25);
-  border-bottom: 2px solid #9eadf0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 0.3s ease;
-  top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 4;
+	padding: 10px 0;
+	background: rgb(25, 25, 25);
+	border-bottom: 2px solid #9eadf0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.3s ease;
+	top: 0;
 }
+
 .logo {
-  padding: 0px 10px;
-  color: #fafafa;
-  font-size: 2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: "Bungee Outline", cursive;
-  transition: color 0.8s;
-  font-weight: 900;
+	padding: 0px 10px;
+	color: #fafafa;
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-family: "Bungee Outline", cursive;
+	transition: color 0.8s;
+	font-weight: 900;
 }
+
 .logo:hover {
-  color: #fac371;
+	color: #fac371;
 }
+
 .navicon {
-  display: none;
-  color: #fafafa;
-  font-size: 1.5rem;
-  padding-right: 10px;
+	display: none;
+	color: #fafafa;
+	font-size: 1.5rem;
+	padding-right: 10px;
 }
+
 .navlink {
-  padding: 0px 10px;
-  list-style: none;
-  display: inline-flex;
-  font-family: Helvetica;
+	padding: 0px 10px;
+	list-style: none;
+	display: inline-flex;
+	font-family: Helvetica;
 }
+
 .navlink li a {
-  transition: color 0.8s;
+	transition: color 0.8s;
 }
+
 .navlink li a:hover {
-  color: #9eadf0;
+	color: #9eadf0;
 }
+
 .navlink a {
-  text-decoration: none;
-  padding: 0px 20px;
-  color: #fafafa;
-  font-size: 2rem;
+	text-decoration: none;
+	padding: 0px 20px;
+	color: #fafafa;
+	font-size: 2rem;
 }
+
 .navlink .cancel {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 }
+
+
 /*Text Section */
+
 .hero-text {
-  height: 50vh;
-  max-width: 100%;
-  text-align: center;
-  background: linear-gradient(
-      0deg,
-      rgba(10, 55, 61, 0.575),
-      rgba(10, 55, 61, 0.575)
-    ),
-    url("../images/bg_hero.jpg") center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fafafa;
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 50vh;
+	max-width: 100%;
+	text-align: center;
+	background: linear-gradient( 0deg, rgba(10, 55, 61, 0.575), rgba(10, 55, 61, 0.575)), url("../images/bg_hero.jpg") center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fafafa;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
 .hero-text h1 {
-  font-size: 2.5rem;
-  margin: 0;
-  padding-top: 80px;
+	font-size: 2.5rem;
+	margin: 0;
+	padding-top: 80px;
 }
+
 .logo-hero {
-  font-family: "Bungee Outline", cursive;
-  font-size: 2.5rem;
+	font-family: "Bungee Outline", cursive;
+	font-size: 2.5rem;
 }
+
 .hero-text h2 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
+
 .offer-container {
-  max-width: 100%;
-  display: flex;
-  height: 50vh;
-  color: #fafafa;
+	max-width: 100%;
+	display: flex;
+	height: 50vh;
+	color: #fafafa;
 }
+
 .training-offer {
-  background: #9eadf0;
+	background: #9eadf0;
 }
+
 .quiz-offer {
-  background: #eebc70;
+	background: #eebc70;
 }
+
 .training-offer,
 .quiz-offer {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  text-align: center;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
 }
+
 .training-offer i,
 .quiz-offer i {
-  font-size: 2rem;
-  color: rgb(25, 25, 25);
-  margin-bottom: 20px;
+	font-size: 2rem;
+	color: rgb(25, 25, 25);
+	margin-bottom: 20px;
 }
+
 .training-offer h3,
 .quiz-offer h3 {
-  font-size: 1.7rem;
-  margin: 10px 30px;
+	font-size: 1.7rem;
+	margin: 10px 30px;
 }
+
+
 /*  Buttons on Page */
+
 .btn-training,
 .btn-quiz {
-  text-decoration: none;
-  color: #fafafa;
-  background-color: rgb(25, 25, 25);
-  padding: 10px 15px;
-  margin-top: 20px;
-  border-radius: 15px;
-  font-weight: 700;
-  border: 1px solid rgb(25, 25, 25);
+	text-decoration: none;
+	color: #fafafa;
+	background-color: rgb(25, 25, 25);
+	padding: 10px 15px;
+	margin-top: 20px;
+	border-radius: 15px;
+	font-weight: 700;
+	border: 1px solid rgb(25, 25, 25);
 }
+
 .btn-training:hover,
 .btn-quiz:hover {
-  background-color: #fafafa;
-  border: 1px solid rgb(25, 25, 25);
-  color: rgb(25, 25, 25);
+	background-color: #fafafa;
+	border: 1px solid rgb(25, 25, 25);
+	color: rgb(25, 25, 25);
 }
+
+
 /*quiz page*/
+
+
 /*  Quiz Cards */
+
 .card-section {
-  width: 100%;
-  margin-top: 80px;
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+	width: 100%;
+	margin-top: 80px;
+	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
+
 .card-section a {
-  text-decoration: none;
-  color: #fafafa;
-  margin-top: 50px;
+	text-decoration: none;
+	color: #fafafa;
+	margin-top: 50px;
 }
+
 .card-section.disabled {
-  display: none;
+	display: none;
 }
+
 .card-container {
-  background-color: rgb(25, 25, 25);
-  display: grid;
-  grid-template-columns: 280px;
-  grid-template-rows: 180px 220px 80px;
-  grid-template-areas: "quiz-image" "quiz-text" "quiz-button";
-  border-radius: 20px;
-  width: 280px;
-  margin: 20px 30px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  text-align: center;
+	background-color: rgb(25, 25, 25);
+	display: grid;
+	grid-template-columns: 280px;
+	grid-template-rows: 180px 220px 80px;
+	grid-template-areas: "quiz-image" "quiz-text" "quiz-button";
+	border-radius: 20px;
+	width: 280px;
+	margin: 20px 30px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+	text-align: center;
 }
+
 .card-container:hover {
-  transform: scale(1.05);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	transform: scale(1.05);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
+
 .card-image {
-  grid-area: quiz-image;
-  background-image: url("../images/scrum.jpg");
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-size: cover;
+	grid-area: quiz-image;
+	background-image: url("../images/scrum.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
 }
+
 .card-text {
-  grid-area: quiz-text;
+	grid-area: quiz-text;
 }
+
 .card-text h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 20px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-top: 20px;
 }
+
 .card-text p {
-  font-size: 1.25rem;
-  margin: 10px 5px;
+	font-size: 1.25rem;
+	margin: 10px 5px;
 }
+
 .card-button {
-  grid-area: quiz-button;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+	grid-area: quiz-button;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
+
 .card-button .button-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: rgb(25, 25, 25);
-  font-weight: 700;
-  padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: rgb(25, 25, 25);
+	font-weight: 700;
+	padding: 10px;
 }
+
 .info {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
+
 .category {
-  margin-top: 5px;
-  font-size: 0.75rem;
+	margin-top: 5px;
+	font-size: 0.75rem;
 }
+
 .scrum .border {
-  border-left: 2px solid #52609e;
-  border-right: 2px solid #52609e;
+	border-left: 2px solid #52609e;
+	border-right: 2px solid #52609e;
 }
+
 .kanban .border {
-  border-left: 2px solid #b38b4f;
-  border-right: 2px solid #b38b4f;
+	border-left: 2px solid #b38b4f;
+	border-right: 2px solid #b38b4f;
 }
+
 .product .border {
-  border-left: 2px solid #839241;
-  border-right: 2px solid #839241;
+	border-left: 2px solid #839241;
+	border-right: 2px solid #839241;
 }
+
 .bg2 {
-  background-image: url("../images/kanban.jpg");
+	background-image: url("../images/kanban.jpg");
 }
+
 .bg3 {
-  background-image: url("../images/product.jpg");
+	background-image: url("../images/product.jpg");
 }
+
+
 /*  Styles used to assign cards and quizes color accordingly */
+
 .scrum-text {
-  color: #9eadf0;
+	color: #9eadf0;
 }
+
 .scrum {
-  background-color: #9eadf0;
+	background-color: #9eadf0;
 }
+
 .kanban-text {
-  color: #fac371;
+	color: #fac371;
 }
+
 .kanban {
-  background-color: #fac371;
+	background-color: #fac371;
 }
+
 .product-text {
-  color: #daf174;
+	color: #daf174;
 }
+
 .product {
-  background-color: #daf174;
+	background-color: #daf174;
 }
+
+
 /*  Rule Box for Quiz */
+
 .rule-box {
-  margin-top: 20px;
-  display: none;
-  width: 600px;
-  max-width: 80%;
-  background: rgb(25, 25, 25);
-  border-radius: 15px;
-  pointer-events: none;
-  color: #fafafa;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.1);
+	margin-top: 20px;
+	display: none;
+	width: 600px;
+	max-width: 80%;
+	background: rgb(25, 25, 25);
+	border-radius: 15px;
+	pointer-events: none;
+	color: #fafafa;
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(0.1);
 }
+
 .rule-title {
-  font-size: 1.5rem;
-  padding: 10px 40px;
-  border-bottom: 1px solid #fafafa;
-  height: 70px;
-  display: flex;
-  align-items: center;
+	font-size: 1.5rem;
+	padding: 10px 40px;
+	border-bottom: 1px solid #fafafa;
+	height: 70px;
+	display: flex;
+	align-items: center;
 }
+
 .rule-list {
-  padding: 0px 32px;
+	padding: 0px 32px;
 }
+
 .rule {
-  font-size: 1.1rem;
-  margin: 10px;
-  line-height: 1.6;
+	font-size: 1.1rem;
+	margin: 10px;
+	line-height: 1.6;
 }
+
 .rule span {
-  font-weight: 600;
+	font-weight: 600;
 }
+
+
 /*  Style for Quiz buttons*/
+
 .quit,
 .start,
 .other-quiz {
-  cursor: pointer;
+	cursor: pointer;
 }
+
 .rule-box .buttons,
 .result-box .buttons {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  border-top: 1px solid #fafafa;
-  justify-content: flex-end;
-  padding: 25px 20px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	border-top: 1px solid #fafafa;
+	justify-content: flex-end;
+	padding: 25px 20px;
 }
+
 .rule-box .buttons button,
 .result-box .buttons button {
-  margin: 0 10px;
-  width: 100px;
-  height: 35px;
-  border: 1px solid #fafafa;
-  color: rgb(25, 25, 25);
-  font-weight: 700;
-  font-size: 1rem;
-  border-radius: 15px;
+	margin: 0 10px;
+	width: 100px;
+	height: 35px;
+	border: 1px solid #fafafa;
+	color: rgb(25, 25, 25);
+	font-weight: 700;
+	font-size: 1rem;
+	border-radius: 15px;
 }
+
+
 /*  Quiz questions */
+
 .quiz-container {
-  margin-top: 80px;
-  display: none;
-  width: 600px;
-  max-width: 80%;
-  background: rgb(25, 25, 25);
-  border-radius: 15px;
-  pointer-events: none;
-  color: #fafafa;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.1);
+	margin-top: 80px;
+	display: none;
+	width: 600px;
+	max-width: 80%;
+	background: rgb(25, 25, 25);
+	border-radius: 15px;
+	pointer-events: none;
+	color: #fafafa;
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(0.1);
 }
+
 .question-category {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 20px;
 }
+
 .timer-number {
-  text-align: center;
-  padding: 5px;
-  width: 70px;
-  border: 2px solid #fafafa;
-  font-size: 1.25rem;
-  font-weight: 700;
+	text-align: center;
+	padding: 5px;
+	width: 70px;
+	border: 2px solid #fafafa;
+	font-size: 1.25rem;
+	font-weight: 700;
 }
+
 .question-name {
-  margin-bottom: 15px;
-  font-size: 1.5rem;
+	margin-bottom: 15px;
+	font-size: 1.5rem;
 }
+
 .choice-container {
-  display: flex;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  align-items: center;
-  font-size: 1.25rem;
-  padding: 5px 5px;
+	display: flex;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 2rem;
+	margin-bottom: 20px;
+	align-items: center;
+	font-size: 1.25rem;
+	padding: 5px 5px;
 }
+
 .choice-container:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(228, 157, 25, 0.5);
-  transform: scale(1.02);
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(228, 157, 25, 0.5);
+	transform: scale(1.02);
 }
+
 .choice-container.disabled {
-  pointer-events: none;
+	pointer-events: none;
 }
+
 .choice-text {
-  width: 100%;
-  color: rgb(25, 25, 25);
-  font-weight: 700;
+	width: 100%;
+	color: rgb(25, 25, 25);
+	font-weight: 700;
 }
+
+
 /*  Style classes to show right or wrong answer */
+
 .correct {
-  background: #2cdf62;
-  border: 1px solid #fafafa;
+	background: #2cdf62;
+	border: 1px solid #fafafa;
 }
+
 .false {
-  background: #e21934;
-  border: 1px solid #fafafa;
+	background: #e21934;
+	border: 1px solid #fafafa;
 }
+
+
 /*  question footer */
+
 footer {
-  align-items: center;
-  display: flex;
-  height: 50px;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 1rem;
+	align-items: center;
+	display: flex;
+	height: 50px;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 1rem;
 }
+
 .total {
-  padding-right: 10px;
-  display: flex;
+	padding-right: 10px;
+	display: flex;
 }
+
 .total span {
-  display: flex;
-  user-select: none;
+	display: flex;
+	user-select: none;
 }
+
 .total span p {
-  font-weight: 500;
-  padding: 0 5px;
+	font-weight: 500;
+	padding: 0 5px;
 }
+
 .total span p:first-child {
-  padding-left: 0px;
+	padding-left: 0px;
 }
+
 .next-btn {
-  border: 1px solid #fff;
-  border-radius: 5px;
-  color: rgb(25, 25, 25);
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: 400;
-  height: 40px;
-  margin-bottom: 8px;
-  padding: 0 13px;
-  display: none;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: rgb(25, 25, 25);
+	cursor: pointer;
+	font-size: 1.25rem;
+	font-weight: 400;
+	height: 40px;
+	margin-bottom: 8px;
+	padding: 0 13px;
+	display: none;
 }
+
+
 /*  Result for after finishing the quiz */
+
 .result-box {
-  display: block;
-  margin-top: 20px;
-  width: 600px;
-  max-width: 80%;
-  background: rgb(25, 25, 25);
-  border-radius: 15px;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.1);
-  pointer-events: none;
-  color: #fafafa;
-  text-align: center;
+	display: block;
+	margin-top: 20px;
+	width: 600px;
+	max-width: 80%;
+	background: rgb(25, 25, 25);
+	border-radius: 15px;
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(0.1);
+	pointer-events: none;
+	color: #fafafa;
+	text-align: center;
 }
+
 .icon {
-  font-size: 2.5rem;
-  padding: 10px;
+	font-size: 2.5rem;
+	padding: 10px;
 }
+
 .result-text,
 .score {
-  font-size: 1.25rem;
-  padding: 10px;
-  line-height: 1.5;
+	font-size: 1.25rem;
+	padding: 10px;
+	line-height: 1.5;
 }
+
+
 /*  using the active-box class to toggle the display of the boxes */
+
 .rule-box.active-box,
 .quiz-container.active-box,
 .result-box.active-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-  display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(-50%, -50%) scale(1);
+	display: block;
 }
+
+
 /* Background when the quiz starts*/
+
 .quiz-bg {
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
 }
+
 .quiz-bg.active-box {
-  z-index: 2;
-  background-color: rgb(25, 25, 25);
-  height: 130%;
-  width: 100%;
-  transform: translate(-50%, -50%) scale(1);
+	z-index: 2;
+	background-color: rgb(25, 25, 25);
+	height: 130%;
+	width: 100%;
+	transform: translate(-50%, -50%) scale(1);
 }
+
+
 /*Training/Contact page */
+
 .contact-container {
-  padding-top: 120px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+	padding-top: 120px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
+
 .contact-container h1 {
-font-size: 2.5rem;
+	font-size: 2.5rem;
 }
+
 .contact-container h2 {
-    font-size: 2rem;
+	font-size: 2rem;
 }
+
 .form-container {
-  max-width: 600px;
-  background: #fac371;
-  border-radius: 15px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+	max-width: 600px;
+	background: #fac371;
+	border-radius: 15px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
 }
+
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
 .contact-form label {
-  display: block;
-  margin: 15px 0px 10px 0px;
-  font-weight: 700;
+	display: block;
+	margin: 15px 0px 10px 0px;
+	font-weight: 700;
 }
 
 .contact-form h3 {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
+
 .contact-form input {
-  width: 70%;
-  height: 1.75rem;
+	width: 70%;
+	height: 1.75rem;
 }
+
 .contact-form select {
-  width: 70%;
-  height: 1.75rem;
+	width: 70%;
+	height: 1.75rem;
 }
-.contact-form textarea{
-    width:70%;
-    height: 150px;
+
+.contact-form textarea {
+	width: 70%;
+	height: 150px;
 }
-.contact-form input[type=submit]{
-    margin-top: 15px; 
-    width: 33%;
-    height: auto;
-    background: rgb(25, 25, 25);
-    color: #fafafa;
-    border: 1px solid #fafafa;
-    border-radius: 15px;
-    font-size: 1.25rem;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-weight: 700;
+
+.contact-form input[type=submit] {
+	margin-top: 15px;
+	width: 33%;
+	height: auto;
+	background: rgb(25, 25, 25);
+	color: #fafafa;
+	border: 1px solid #fafafa;
+	border-radius: 15px;
+	font-size: 1.25rem;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-weight: 700;
 }
-.contact-form input[type=submit]:hover{
-    background: #fafafa;
-    border: 1px solid rgb(25, 25, 25);
-    color: rgb(25, 25, 25);
+
+.contact-form input[type=submit]:hover {
+	background: #fafafa;
+	border: 1px solid rgb(25, 25, 25);
+	color: rgb(25, 25, 25);
 }
+
+
 /*Media Queries */
+
 @media screen and (max-width: 600px) {
-  body {
-    max-height: 100%;
-    max-width: 100%;
-  }
-  .navicon {
-    display: block;
-  }
-  .navicon.disabled {
-    display: none;
-  }
-  .navigation .navlink {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 50vh;
-    width: 100%;
-    background: rgb(25, 25, 25);
-    color: #fafafa;
-    text-align: center;
-    display: block;
-    padding: 40px 0px;
-    border-bottom: 2px solid #9eadf0;
-    transition: all 0.3s ease-out;
-  }
-  .navigation.responsive .navlink {
-    left: 0%;
-  }
-  .navigation .navlink li {
-    margin-top: 30px;
-  }
-  .navigation .navlink li a {
-    margin-left: -100%;
-    transition: 0.5s linear;
-  }
-  .navigation.responsive .navlink li a {
-    margin-left: 0px;
-  }
-  .hero-text h1 {
-    padding-top: 100px;
-    font-size: 2rem;
-  }
-  .logo-hero {
-    font-family: "Bungee Outline", cursive;
-    font-size: 2.25rem;
-  }
-  .hero-text h2 {
-    font-size: 1.8rem;
-  }
-  .card-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  .offer-container {
-    flex-direction: column;
-  }
-  .training-offer,
-  .quiz-offer {
-    width: 100%;
-    height: 50%;
-  }
-  .training-offer i,
-  .quiz-offer i {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  .training-offer h3,
-  .quiz-offer h3 {
-    font-size: 1rem;
-    margin: 10px 30px;
-  }
-  .btn-training,
-  .btn-quiz {
-    font-size: 0.8rem;
-    padding: 5px 8px;
-    margin-top: 3px;
-  }
-  .question-category {
-    font-size: 0.8rem;
-  }
-  .question-name {
-    margin-bottom: 15px;
-    font-size: 1rem;
-  }
-  .choice-container {
-    font-size: 0.8rem;
-  }
-  .form-container{
-      margin-bottom: 20px;
-  }
-  .contact-container h1{
-      font-size: 2rem;
-      margin-bottom: 10px;
-      line-height: 1.2;
-  }
-  .contact-container h2 {
-      font-size: 1.8rem;
-      line-height: 1.4;
-  }
+	body {
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.navicon {
+		display: block;
+	}
+	.navicon.disabled {
+		display: none;
+	}
+	.navigation .navlink {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		height: 50vh;
+		width: 100%;
+		background: rgb(25, 25, 25);
+		color: #fafafa;
+		text-align: center;
+		display: block;
+		padding: 40px 0px;
+		border-bottom: 2px solid #9eadf0;
+		transition: all 0.3s ease-out;
+	}
+	.navigation.responsive .navlink {
+		left: 0%;
+	}
+	.navigation .navlink li {
+		margin-top: 30px;
+	}
+	.navigation .navlink li a {
+		margin-left: -100%;
+		transition: 0.5s linear;
+	}
+	.navigation.responsive .navlink li a {
+		margin-left: 0px;
+	}
+	.hero-text h1 {
+		padding-top: 100px;
+		font-size: 2rem;
+	}
+	.logo-hero {
+		font-family: "Bungee Outline", cursive;
+		font-size: 2.25rem;
+	}
+	.hero-text h2 {
+		font-size: 1.8rem;
+	}
+	.card-section {
+		flex-direction: column;
+		align-items: center;
+	}
+	.offer-container {
+		flex-direction: column;
+	}
+	.training-offer,
+	.quiz-offer {
+		width: 100%;
+		height: 50%;
+	}
+	.training-offer i,
+	.quiz-offer i {
+		font-size: 1.5rem;
+		margin-bottom: 5px;
+	}
+	.training-offer h3,
+	.quiz-offer h3 {
+		font-size: 1rem;
+		margin: 10px 30px;
+	}
+	.btn-training,
+	.btn-quiz {
+		font-size: 0.8rem;
+		padding: 5px 8px;
+		margin-top: 3px;
+	}
+	.question-category {
+		font-size: 0.8rem;
+	}
+	.question-name {
+		margin-bottom: 15px;
+		font-size: 1rem;
+	}
+	.choice-container {
+		font-size: 0.8rem;
+	}
+	.form-container {
+		margin-bottom: 20px;
+	}
+	.contact-container h1 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+	.contact-container h2 {
+		font-size: 1.8rem;
+		line-height: 1.4;
+	}
 }
+
 @media screen and (max-width: 770px) {
-  body {
-    max-height: 100vh;
-    max-width: 100%;
-  }
-  .card-container {
-    grid-template-columns: 220px;
-    grid-template-rows: 180px 220px 80px;
-    grid-template-areas: "quiz-image" "quiz-text" "quiz-button";
-    border-radius: 20px;
-    width: 220px;
-    margin: 40px 15px;
-  }
+	body {
+		max-height: 100vh;
+		max-width: 100%;
+	}
+	.card-container {
+		grid-template-columns: 220px;
+		grid-template-rows: 180px 220px 80px;
+		grid-template-areas: "quiz-image" "quiz-text" "quiz-button";
+		border-radius: 20px;
+		width: 220px;
+		margin: 40px 15px;
+	}
 }
+
 @media only screen and (min-width: 2000px) and (max-width: 2561px) {
-  .hero-text h1 {
-    font-size: 5rem;
-  }
-  .logo-hero {
-    font-family: "Bungee Outline", cursive;
-    font-size: 5rem;
-  }
-  .hero-text h2 {
-    font-size: 4rem;
-  }
-  .training-offer i,
-  .quiz-offer i {
-    font-size: 4rem;
-  }
-  .training-offer h3,
-  .quiz-offer h3 {
-    font-size: 3.25rem;
-  }
-  .btn-training,
-  .btn-quiz {
-    font-size: 2rem;
-    padding: 20px 30px;
-    margin-top: 20px;
-    border-radius: 15px;
-    font-weight: 700;
-    border: 5px solid rgb(25, 25, 25);
-  }
-  .contact-container h1{
-      font-size:5rem;
-      margin-bottom: 10px;
-  }
-  .contact-container h2 {
-      font-size: 4rem;
-      line-height: 1.4;
-  }
-  .form-container{
-      max-width: 1000px;
-  }
-  .contact-form{
-      font-size: 2rem;
-  }
-  .contact-form h3 {
-    font-size: 3.25rem;
-  }
+	.hero-text h1 {
+		font-size: 5rem;
+	}
+	.logo-hero {
+		font-family: "Bungee Outline", cursive;
+		font-size: 5rem;
+	}
+	.hero-text h2 {
+		font-size: 4rem;
+	}
+	.training-offer i,
+	.quiz-offer i {
+		font-size: 4rem;
+	}
+	.training-offer h3,
+	.quiz-offer h3 {
+		font-size: 3.25rem;
+	}
+	.btn-training,
+	.btn-quiz {
+		font-size: 2rem;
+		padding: 20px 30px;
+		margin-top: 20px;
+		border-radius: 15px;
+		font-weight: 700;
+		border: 5px solid rgb(25, 25, 25);
+	}
+	.contact-container h1 {
+		font-size: 5rem;
+		margin-bottom: 10px;
+	}
+	.contact-container h2 {
+		font-size: 4rem;
+		line-height: 1.4;
+	}
+	.form-container {
+		max-width: 1000px;
+	}
+	.contact-form {
+		font-size: 2rem;
+	}
+	.contact-form h3 {
+		font-size: 3.25rem;
+	}
 }

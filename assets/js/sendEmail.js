@@ -9,10 +9,10 @@ function sendMail(contactForm) {
     })
     .then(
       function (response) {
-        console.log("success", response); // Test if sending was succesful
+        alert("Thank you! The Gemba team will answer soon."); // Test if sending was succesful
       },
       function (error) {
-        console.log("failed"); // Test if sending was unsuccesful
+        alert("There seems to be a problem. Please try again later."); // Test if sending was unsuccesful
       }
     );
   return false; // prevent page from refreshing
